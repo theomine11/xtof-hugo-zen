@@ -1,0 +1,15 @@
+{{ partial "header.html" . }}
+
+	<main role="main">
+		<article itemscope itemtype="http://schema.org/BlogPosting">
+			<h1 class="entry-title" itemprop="headline">{{ .Title }}</h1>
+			<span class="entry-meta"><time class="dt-published" itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+              {{ .Date.Format "2" }}{{ if in (slice 1) .Date.Day}}er{{ end }}
+               {{ index $.Site.Data.mois (printf "%d" .Date.Month) }} {{ .Date.Year }}</time></span>
+			<section itemprop="entry-text">
+				{{ .Content }}
+			</section>
+		</article>
+	</main>
+
+{{ partial "footer.html" . }}

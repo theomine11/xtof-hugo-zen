@@ -1,0 +1,19 @@
+baseURL = "/"
+languageCode = "fr"
+title = "100 days of code"
+author = "xtof-zen"
+copyright = "xtof"
+googleanalytics = "UA-104942350-1"
+theme ="hugo-zen"
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+
+
+[params]
+  logo      = "/images/logo.jpg"
+  twitter   = "https://twitter.com/xtof_party"
+  facebook  = "https://www.facebook.com/christophe.ducamp"
+  github    = "https://github.com/ChristopheDucamp/"
+  gitlab    = "https://gitlab.com/ChristopheDucamp/"
+  email     = "christophe@ducamp.me"

@@ -1,0 +1,63 @@
+---
+title: Stratégies de Sauvegarde 2017
+date: 2016-12-30 07:28:00 +01:00
+tags:
+- sauvegarde
+- backup
+- jamstack
+- sécurité
+author: xtof
+subtitle: Très Envie d'une Architecture de Sécurité Douce
+---
+
+## Ménage de fin d'année 
+
+Rapide compte-rendu des travaux et quelques pensées en vrac avant de prendre le train pour me reposer à Auvers-sur-Oise. 
+
+La migration de ce site est enfin terminée et basée sur une architecture flexible ([pile JAM](http://ducamp.me/JAMStack)). Un schéma  soufflé par <span class="h-card">[Bertrand](https://bertrandkeller.info)</span> [lors de notre dernier déjeuner de travail](https://www.christopheducamp.com/2016/12/09/dejeuner-avec-bertrand/) : 
+
+- Registraire domaine : Gandi,
+- Réseau de distribution de contenus ([CDN](http://ducamp.me/CDN)) : [Netlify](https://netlify.com), 
+- Stockage : [dépôt chez GitHub](https://github.com/ChristopheDucamp/xtof-clean-blog). 
+
+<blockquote class="twitter-tweet" data-lang="fr"><p lang="fr" dir="ltr">Nouvelle version pour <a href="https://t.co/j1PSIKRUK7">https://t.co/j1PSIKRUK7</a> avec des ressources et des exemples à venir (soumettez les vôtres !)</p>&mdash; Jamstatic-fr (@jamstatic_fr) <a href="https://twitter.com/jamstatic_fr/status/814754338899980288">30 décembre 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+## Conforté par la Sécurité de l'Architecture
+
+Très motivé par les résonances et mes premiers pas dans cette architecture "[JAMstack](https://jamstack.org)". 
+
+J'adore cette **stratégie de sauvegarde web** qui reste encore à valider d'un point de vue [Sécurité](http://ducamp.me/Security).
+
+Trois points qui me semblent changer la donne 
+- déploiement facile et en continu,
+- flexibilité pour de nouveaux essais moteurs,
+- diversité des interfaces-utilisateur. 
+
+Pour finir sur l'enchantement de cette architecture  d'hébergement, je commence à brainstormer sur le potentiel de délégations de services à ouvrir avec des professionnels des APIs et du [design web résilient](https://resilientwebdesign.com).
+
+## IndieWeb : Comment Classer la JAMStack 
+
+Dois-je créer une nouvelle section "JAMStack" au sein des offres d'hébergement de domaine statique recensées sur la [page d'exemples des hébergements web](https://indieweb.org/web_hosting) compilées par les membres de la communauté indieweb ? 
+
+
+## Ailleurs sur les silos sociaux 
+
+Lancé quelques sauvegardes locales de mon petit macbook pro sur un disque externe qui [craquera d'ici 6 ans](https://www.backblaze.com/blog/how-long-do-disk-drives-last/) selon une promotion pour [Backblaze](https://www.backblaze.com/fr_FR/). 
+
+Quelles solutions "low-cost" de sauvegardes conseillez-vous pour rapatrier en un lieu plus sûr une '''sauvegarde de sauvegardes''' de quelques téra-octets de ''données personnelles'' disséminés dans les nuages et silos sociaux ? 
+
+![Backup-Disque-BB-USB.png](/uploads/Backup-Disque-BB-USB.png)
+
+### Sauvegardes des Silos
+
+<blockquote class="twitter-tweet" data-lang="fr"><p lang="fr" dir="ltr">Backup <a href="https://twitter.com/hashtag/archive?src=hash">#archive</a> 2016 en progrès : <br>- flickr ok <br>- twitter (incomplète) <br>-  <a href="https://twitter.com/jekyllrb">@jekyllrb</a> sur la <a href="https://twitter.com/hashtag/JAMStack?src=hash">#JAMStack</a><br> &gt; <a href="https://t.co/8YIWhow3KA">https://t.co/8YIWhow3KA</a> <a href="https://t.co/fiTqS6Emob">pic.twitter.com/fiTqS6Emob</a></p>&mdash; Christophe Ducamp (@xtof_fr) <a href="https://twitter.com/xtof_fr/status/814085979661340673">28 décembre 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Mes premiers essais seront documentés sur la page [Sauvegarde](http://ducamp.me/Sauvegarde) de mon wiki de famille. Très déçu par le service digi.me (application gelée à cette heure). 
+
+Après avoir récupéré toutes mes photos chez Flickr, je compte bien travailler la semaine prochaine sur l'enrichissement de mon archive twitter. 
+
+Si vous avez des suggestions, [modifiez ce post directement dans GitHub](https://github.com/ChristopheDucamp/xtof-clean-blog/blob/master/_posts/2016-12-30-sauvegarde-2017.markdown), envoyez-moi un message direct ou posez directement vos liens dans le formulaire de webmention en-dessous. 
+
+Bonnes fêtes à tous.
