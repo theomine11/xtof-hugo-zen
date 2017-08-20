@@ -1,15 +1,30 @@
 {{ partial "header.html" . }}
 
 	<main role="main">
-		<article itemscope itemtype="http://schema.org/BlogPosting">
-			<h1 class="entry-title" itemprop="headline">{{ .Title }}</h1>
-			<span class="entry-meta"><time class="dt-published" itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-              {{ .Date.Format "2" }}{{ if in (slice 1) .Date.Day}}er{{ end }}
-               {{ index $.Site.Data.mois (printf "%d" .Date.Month) }} {{ .Date.Year }}</time></span>
+		<article class="h-entry post" itemscope itemtype="http://schema.org/BlogPosting">
+			<h1 class="entry-title" itemprop="headline">
+                <a class="p-name u-url" href='{{ .Permalink }}'> {{ .Title }}</a></h1>
+
+            <span class="entry-meta">
+                <span rel="author" class="p-author h-card">
+                    <a href="{{ .Site.Params.authorurl }}" >{{ .Site.Params.author }}</a>
+                </span>
+                <time class="dt-published" itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2" }}{{ if in (slice 1) .Date.Day}}er{{ end }}
+               {{ index $.Site.Data.mois (printf "%d" .Date.Month) }} {{ .Date.Year }}
+                </time> - {{ .FuzzyWordCount }} mots
+            </span>
 			<section itemprop="entry-text">
-				{{ .Content }}
+
+                <div class="e-content">{{ .Content }}</div>
+                <div class="tags">
+                    {{ range .Params.tags }}
+                    <a rel="tag" class="p-category" href="/tags/{{ replace . "#" "%23" | urlize }}/">{{ . }}</a>
+                    {{ end }}
+                </div>
 			</section>
 		</article>
 	</main>
 
 {{ partial "footer.html" . }}
+
+

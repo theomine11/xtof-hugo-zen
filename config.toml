@@ -1,16 +1,20 @@
 baseURL = "/"
 languageCode = "fr"
 title = "100 days of code"
-author = "xtof-zen"
+author = "christophe ducamp"
 copyright = "xtof"
 googleanalytics = "UA-104942350-1"
 theme ="hugo-zen"
+
+
 
 [permalinks]
   post = "/:year/:month/:day/:slug/"
 
 
 [params]
+  authorurl = "https://christopheducamp.com"
+  author    = "xtof"
   logo      = "/images/logo.jpg"
   twitter   = "https://twitter.com/xtof_party"
   facebook  = "https://www.facebook.com/christophe.ducamp"

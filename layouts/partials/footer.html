@@ -8,7 +8,11 @@
 			{{ with .Site.Params.github }}<a rel="me" href="{{ . }}" target="_blank">GitHub</a>{{ end }}
 			{{ with .Site.Params.gitlab }}<a rel="me" href="{{ . }}" target="_blank">GitLab</a>{{ end }}
 		</div>
-		<div class="copyright">Copyright &copy; {{ .Site.Copyright | safeHTML }}</div>
+		<div class="copyright">Copyright &copy; <!--{{ .Site.Copyright | safeHTML }}-->
+            <span rel="author" class="p-author h-card">
+                    <a href="{{ .Site.Params.authorurl }}" >{{ .Site.Params.author }}</a>
+            </span>
+        </div>
 	</footer>
 
 </div>

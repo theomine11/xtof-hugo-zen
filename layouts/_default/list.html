@@ -4,8 +4,8 @@
 		<h1 class="list-title">{{ .Title }}</h1>
 {{ range .Data.Pages }}
 		<article itemscope itemtype="http://schema.org/Blog">
-			<h2 class="entry-title" itemprop="headline"><a href="{{ .RelPermalink }}">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</a></h2>
-			<span class="entry-meta"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2" }}{{ if in (slice 1) .Date.Day}}er{{ end }}
+			<h2 class="entry-title h-entry" itemprop="headline"><a class="p-name u-url" href="{{ .RelPermalink }}">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</a></h2>
+			<span class="entry-meta"><time class="dt-published" itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2" }}{{ if in (slice 1) .Date.Day}}er{{ end }}
                {{ index $.Site.Data.mois (printf "%d" .Date.Month) }} {{ .Date.Year }}</time></span>
 		</article>
 {{ end }}
