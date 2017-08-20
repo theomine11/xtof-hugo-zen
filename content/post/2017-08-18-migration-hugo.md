@@ -14,16 +14,16 @@ Jekyll est un générateur de site statique incroyable et je ne voudrais en aucu
 
 ![Jekyll build et version Ruby](https://monosnap.com/file/kXoJF1LsSSFVsjamdrTw37klKqc7C4.png)
 
-Mais comme d'autres [utilisateurs plus ou moins néophytes](https://jamstatic.fr/2017/06/07/migration-de-jekyll-a-hugo/), quelques soucis lors des mises à jour de version Jekyll. Les erreurs de build étaient rebutantes pour tenir un flow d'écriture dans l'éditeur.
+Mais comme d'autres [utilisateurs plus ou moins néophytes](https://jamstatic.fr/2017/06/07/migration-de-jekyll-a-hugo/), je rencontrais trop souvent des agacements lors des mises à jour de version Jekyll. Les averstissmements et erreurs de build étaient bien trop rebutantes à mon goût pour tenir un flow d'écriture dans l'éditeur markdown.
 
-L'appel GoHugo me démange depuis quelques semaines. [Premiers pas enthousiasmants sur Hugo](https://100daysofcode.christopheducamp.com/page/thanks) effectués sur un sous-domaine pour un défi personnel de #100daysofcode.
+L'appel GoHugo me démange depuis quelques mois. Les [premiers pas effectués sur un sous-domaine "100daysofcode"](https://100daysofcode.christopheducamp.com/page/thanks) m'ont emballé pour persévérer.
 
-Je continuerai à utiliser Jekyll. Gardé une instance de famille pour effectuer des tests. Et je prévois d'accompagner Barbara à la rentrée dans la prise en main de son nouveau site professionnel où Bertrand [nous invite à jongler avec des milliers de photos](http://jekyll-for-craftman.netlify.com/) pour organiser la présentation de ses collections
+Je continuerai à utiliser Jekyll. Je conserve une instance de famille pour effectuer des tests. Et j'accompagnerai Barbara à la rentrée dans la prise en main de son nouveau site professionnel où Bertrand [nous invite à jongler avec des milliers de photos](http://jekyll-for-craftman.netlify.com/) pour organiser la présentation de ses collections
 
 
 ## Migration "hugo-zen"
 
-Ce qui suit demeure une expérience personnelle de non développeur. Si vous êtes développeur web, vous aurez sûrement de meilleures astuces. Ce qui me fascine dans Hugo -outre la vitesse de "build"- c'est la visualisation live en local du rendu d'affichage durant les modifications de code. Ne pas avoir à rafraîchir la page s'avère à l'usage pratique et fonctionnel pour l'apprentissage et les essais/erreurs de design css.
+Ce qui suit demeure une expérience personnelle de non développeur. Si vous êtes développeur web, vous aurez sûrement de meilleures astuces. Ce qui me fascine dans Hugo -outre la vitesse de "build"- c'est la visualisation live en local du rendu d'affichage durant les modifications de code. Ne plus avoir à rafraîchir la page s'avère à l'usage pratique et très fonctionnel pour l'apprentissage et les itérations de design css.
 
 Encouragé par [matjaz](https://matjaz.it/) dans son post "[Hugo Power User : make it web friendly part 1](https://matjaz.it/hugo-power-user-make-it-web-friendly-1/)", je migre ainsi aujourd'hui avec le thème [hugo-zen](https://github.com/rakuishi/hugo-zen) pour repartir sur des bases simples à itérer.
 
@@ -33,7 +33,7 @@ Ne me sentant pas encore capable de [créer un thème à partir de zéro](https:
 
 ## Récap des travaux du jour 
 
-Utilisé la [commande import](https://gohugo.io/commands/hugo_import_jekyll/) `hugo import jekyll` éclairé par [quelques  astuces de Joe Watkins](https://joe-watkins.io/webdev/migrate-from-jekyll-to-hugo/).
+Utilisé la [commande import](https://gohugo.io/commands/hugo_import_jekyll/) `hugo import jekyll`
 
 1. nettoyé quelques front-matter de posts 
 2. les photos et images sont désormais posées dans le dossier `static\img`
@@ -44,15 +44,9 @@ Utilisé la [commande import](https://gohugo.io/commands/hugo_import_jekyll/) `h
 	6. conservé l'ancien repo
 	6. changé de repo github : <https://github.com/ChristopheDucamp/xtof-hugo-zen>
 
-
-## Templates 
-
-Les templates en sortie de boîte sont plutôt aisés à comprendre. Ils tirent partie de la syntaxe [Go](https://golang.org/) et on peut aisément porter la [syntaxe liquidde Jekyll](https://jekyllrb.com/docs/templates/) en Go. par ex. `{{ ma_page.title }}` vers `{{ .Title }}`
-
-
 ## yeah !
 
-A ce stade, j'apprécie le retour à la vitesse et la simplicité.
+A ce stade, j'apprécie le retour à la vitesse et la simplicité. Tout reste à ranger, mettre en forme.
 
   
 
