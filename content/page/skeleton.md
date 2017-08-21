@@ -1,6 +1,6 @@
 ---
 title: Skeleton
-subtitle: La Grille 
+subtitle: découverte du boilerplate intégré dans hugo-zen
 slug:
 date: "2017-08-21T02:51:30+02:00"
 lastmod: "2017-08-21T02:52:30+02:00"
@@ -10,11 +10,11 @@ bigimg: [{src: "/img/path.jpg", desc: "Sur la Route"}]
 comments: false
 ---
 
-Découverte de la [présentation de Skeleton](http://getskeleton.com/#intro)
+Avant de partir en *pensée design css* pour construire une page d'accueil "[above-the-fold](/2017/08/11/r1d19-above-the-fold/)" avec un menu personnalisé et d'autres layouts fondamentaux, je découvre avec enchantement les  potentiels de mise en forme du [Skeleton](http://getskeleton.com/#intro), le boilerplate intégré dans le thème [hugo-zen](https://github.com/rakuishi/hugo-zen).
 
 ## Typographie 
 
-La typo est définie avec le `rems`, de sorte que les tailles de police et les relations spatiales peuvent être évaluées en fonction d'une propriété `<html>` unique `font-size`. En sortie de boîte, Skeleton ne change jamais la taille de police `<html>`, mais il reste là dans le cas où vous en avez besoin pour votre projet. Toutes les mesures sont toujours de base 10, un `<h1>` avec `5.0rem` de font-size signifie simplement `50px`.
+La typo est définie avec le `rems`, de sorte que les tailles de police et les relations spatiales peuvent être évaluées en fonction d'une propriété `<html>` unique `font-size`. En sortie de boîte, Skeleton ne change jamais la taille de police `<html>`, mais il reste là dans le cas où vous en avez besoin pour votre projet. Toutes les mesures sont toujours de base 10, un `<h1>` avec une `font-size` de `5.0rem` signifie simplement `50px`.
 
 - La **typographie de base** est [Raleway](http://www.google.com/fonts/specimen/Raleway) servie par Google, définie à 15rem (15px) sur une hauteur de 1.6 lignes (24px). D'autres types de base comme les [ancres](http://getskeleton.com/#), le **gras**, l'_emphase_ et le _souligné_ sont tous évidemment inclus.
 - **En-têtes** créez une famille de tailles distinctes chacune avec des `letter-spacing`, `line-height` et `margins` spécifiques.
