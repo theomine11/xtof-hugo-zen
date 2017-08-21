@@ -45,7 +45,7 @@ Faute de me sentir à l'aise pour [créer un thème à partir de zéro](https://
 
 ## Yeah !
 
-Je m'arrête là pour aujourd'hui. Heureux retrouver la vitesse et la simplicité vécues lors de mes premiers pas sur Jekyll. Chantier de mise en forme et d'[indiemark](https//indieweb.org/IndieMark) prévu pour demain.
+Je m'arrête là pour aujourd'hui. Heureux retrouver la vitesse et la simplicité vécues lors de mes premiers pas sur Jekyll. Chantier de mise en forme et d'[indiemark](https://indieweb.org/IndieMark) prévu pour demain.
 
   
 
