@@ -45,7 +45,13 @@ Faute de me sentir à l'aise pour [créer un thème à partir de zéro](https://
 
 ## Yeah !
 
-Je m'arrête là pour ce soir. Heureux retrouver la vitesse et la simplicité vécues lors de mes premiers pas sur Jekyll. Chantier de mise en forme (menu page d'accueil, layouts à revoir) et d'[indiemark](https://indieweb.org/IndieMark) prévu cette semaine.
+Je m'arrête là pour ce soir. Heureux retrouver la vitesse et la simplicité vécues lors de mes premiers pas sur Jekyll. 
+
+## Chantier prévu cette semaine 
+
+- mise en forme (menu page d'accueil, layouts à revoir),
+- [optimisation et performance](https://developers.google.com/speed/pagespeed/insights/?url=christopheducamp.com&tab=mobile) 
+- [indiemark](https://indieweb.org/IndieMark).
 
   
 
