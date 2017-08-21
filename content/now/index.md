@@ -10,7 +10,7 @@ date: 2017-08-03
 
 Les personnes me demandent souvent ce que je fais en ce moment.
 
-À chaque fois, je devais taper une réponse, décrivant où je suis, sur quoi je suis concentré, et ce que je ne suis pas.
+À chaque fois, je devais taper une réponse, décrivant où je suis, les sujets sur lesquels je suis concentré, et ce que je ne suis pas.
 
 Aussi en début d'année j'ai ajouté à mon site une page [/now](https://sivers.org/now) : **[sivers.org/now](https://sivers.org/now)**
 

@@ -1,17 +1,25 @@
-baseURL = "/"
+baseURL = "https://christopheducamp.com/"
 languageCode = "fr"
 title = "100 days of code"
 author = "christophe ducamp"
-copyright = "xtof"
+DefaultContentLanguage = "fr"
+copyright = "Creative Commons Attribution 4.0 International License"
 googleanalytics = "UA-104942350-1"
 theme ="hugo-zen"
 metaDataFormat = "yaml"
 
 [permalinks]
   post = "/:year/:month/:day/:slug/"
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+[sitemap]
+  changefreq = "weekly"
+ priority = 0.5
 
-
+canonifyURLs = true ## Transforme toutes les URLs en absolues en utilisant baseURL
 enableRobotsTXT = true
+enableEmoji = true
 enableGitInfo = true
 pygmentsUseClasses = true
 pygmentCodeFences = true
@@ -21,16 +29,30 @@ disqusShortname = "xtof"
 
 
 [params]
+  name = "christophe ducamp"
   authorurl = "https://christopheducamp.com"
   author    = "xtof"
+  handle    = "xtof_party"
+  subtitle  = "100daysofcode"
+  summary   = ""
+  keywords  = "indieweb, web"
+  description = "sur la route de l'indieweb"
   logo      = "/img/logo.jpg"
   twitter   = "https://twitter.com/xtof_party"
   facebook  = "https://www.facebook.com/christophe.ducamp"
   github    = "https://github.com/ChristopheDucamp/"
   gitlab    = "https://gitlab.com/ChristopheDucamp/"
   email     = "christophe@ducamp.me"
+  keybase   = "https://keybase.io/christopheducamp"
+  #licenseURL  = "/mentions-legales/"
+  #stylesheetURL = "/css/style.min.css"
+  #highlightJSURL = "/css/highlight.pack.js"
+
 ## repo Gh pour le pied de page (inclure un slash ? la fin)
   ghrepo = "https://github.com/ChristopheDucamp/xtof-hugo-zen/"
   favicon = "img/favicon.ico"
   commit = "https://github.com/ChristopheDucamp/xtof-hugo-zen/tree"
   rss = true
+
+ [Author]
+     twitter ="xtof_party"

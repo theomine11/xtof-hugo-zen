@@ -20,12 +20,13 @@ La typo est définie avec les `rems`, de sorte que les tailles de police et les 
 - **En-têtes** : créez une famille de tailles distinctes chacune avec des `letter-spacing`, `line-height` et `margins` spécifiques.
 
 <!-- Titres standards -->
-<h1>Titre</h1>
-<h2>Titre</h2>
-<h3>Titre</h3>
-<h4>Titre</h4>
-<h5>Titre</h5>
-<h6>Titre</h6>
+
+# Titre1
+## Titre2
+### Titre3
+#### Titre4
+##### Titre5
+###### Titre6
 
 <!-- Base taille typo -->
 <p>La typo de base est de 15px sur une hauteur de ligne de 1.6  (24px)</p>
@@ -83,14 +84,12 @@ La typo est définie avec les `rems`, de sorte que les tailles de police et les 
 
 ## Listes 
 
-<div class="docs-section" id="lists">
-<h6 class="docs-header">Listes</h6>
-      <div class="row docs-example">
-        <div class="six columns">
-          <ul>
+<div class="row docs-example">
+    <div class="six columns">
+        <ul>
             <li>Les listes non ordonnées ont des styles basiques</li>
             <li>
-              Elles utilisent le style de liste circle
+                Elles utilisent le style de liste circle
               <ul>
                 <li>Les listes encapsulées peuvent être gérées</li>
                 <li>Elles peuvent imbriquer n'importe quel type de liste l'une dans l'autre</li>
@@ -98,21 +97,24 @@ La typo est définie avec les `rems`, de sorte que les tailles de police et les 
             </li>
             <li>Juste plus d'items de liste lorem ipsum</li>
           </ul>
-        </div>
-        <div class="six columns">
-          <ol>
+    </div>
+    <div class="six columns">
+        <ol>
             <li>Les listes ordonnées ont aussi des styles basiques</li>
             <li>
-              Elles utilisent le style de liste décimal
-              <ul>
-                <li>Les listes ordonnées et non ordonnées peuvent être imbriquées</li>
-                <li>Tout type de liste rentre l'une dans l'autre</li>
-              </ul>
+                Elles utilisent le style de liste décimal
+                  <ul>
+                      <li>Les listes ordonnées et non ordonnées peuvent être imbriquées</li>
+                      <li>Tout type de liste rentre l'une dans l'autre</li>
+                   </ul>
             </li>
             <li>Dernier item de liste juste pour rire</li>
-          </ol>
-        </div>
-      </div>
+        </ol>
+    </div>
+</div>    
+        
+        
+     
 
 
 <!-- Substituez facilement toute <ul> ou un <ol> pour avoir des listes ou sous-listes numérotées. Skeleton ne supporte pas les listes imbriquées à plus de 2 niveaux -->

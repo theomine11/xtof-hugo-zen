@@ -1,38 +1,66 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 <head>
-<meta charset="utf-8">
-{{ .Hugo.Generator }}
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--<link href="//fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">-->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i,800,800i" rel="stylesheet">
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
-<link rel="stylesheet" href="/css/normalize.css">
-<link rel="stylesheet" href="/css/skeleton.css">
-<link rel="stylesheet" href="/css/custom.css">
-<link rel="alternate" href="/index.xml" type="application/rss+xml" title="{{ .Site.Title }}">
-<!-- favicons -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fff">
-<meta name="theme-color" content="#ffffff">
-<!-- /favicons-->
-<!--webmention.heroku.app -->
-<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
-<!-- /webmention.heroku.app -->
+    <meta charset="utf-8">
+    {{ .Hugo.Generator }}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="{{ .Site.Params.name }}"/>
+    <meta name="keywords" content="{{ .Site.Params.keywords }}"/>
+    <meta name="description" content="{{ if eq .Section "post" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}"/>
+    <!--<link rel="license" href="{{ .Site.Params.licenseURL }}"/>-->
+    {{ if .Site.RSSLink -}}
+    <link rel="alternate" href="{{ .Site.RSSLink }}" type="application/rss+xml" title="{{ .Site.Title }}"/>
+    {{- end }}
+
+    {{/* Schema.org markup for Google+ */}}
+    <meta itemprop="name" content="{{ .Title }}">
+    <meta itemprop="description" content="{{ .Description }}">
+    <meta itemprop="image" content="/img/logo.jpg">
 
 
+    {{/* Twitter Card data, image au moins 120x120px */}}
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="{{ .Site.Params.handle }}">
+    <meta name="twitter:title" content="{{ .Site.Title }}">
+    <meta name="twitter:description" content="{{ .Description }}">
+    <meta name="twitter:creator" content="{{ .Site.Params.handle }}">
+    <meta name="twitter:image:src" content="{{ "/img/logo.jpg" | absURL }}">
+    <meta name="twitter:image:alt" content="portrait xtof">
+
+    {{/* Facebook's Open Graph data */}}
+    <meta property="og:title" content="{{ .Site.Title }}" />
+    <meta property="og:type" content="post" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:image" content="{{ .Site.Params.logo }}" />
+    <meta property="og:description" content="{{ .Description }}" />
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
+    <meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML }}" />
+    <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" | safeHTML }}" />
+
+    <!-- Real Favicon Generator -->
+    {{ partial "favicons.html" . }}
+    <!-- /Real Favicon Generator favicons -->
+
+    <link href="//fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/skeleton.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="{{ .Site.Title }}">
     <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
+
 </head>
+
 <body>
 
 <div class="container">
 
-	<header role="banner">
-		<div class="header-logo">
-			<a href="/"><img src="{{ .Site.Params.logo }}" width="60" height="60" alt="{{ .Site.Title }}"></a>
-		</div>
-		{{ if eq $isHomePage true }}<h1 class="site-title">{{ .Site.Title }}</h1>{{ end }}
-	</header>
+    <header role="banner">
+        <div class="header-logo">
+            <a href="/"><img src="{{ .Site.Params.logo }}" width="60" height="60" alt="{{ .Site.Title }}"></a>
+        </div>
+        {{ if eq $isHomePage true }}
+        <h1 class="site-title">{{ .Site.Title }}</h1>
+        {{ end }}
+
+    </header>

@@ -8,6 +8,7 @@ tags:
 - playlist
 title: La soirée d'Alexandra et Bruno
 url: /2017/01/29/la-soiree-dalexandra-et-bruno copie/
+draft: true
 ---
 
 Belles retrouvailles avec tant de proches. Que de souvenirs. 
