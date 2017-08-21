@@ -38,14 +38,14 @@ Faute de me sentir à l'aise pour [créer un thème à partir de zéro](https://
 1. *utilisé* la [commande import](https://gohugo.io/commands/hugo_import_jekyll/) `hugo import jekyll` pour importer deux  instances jekyll. 
 2. *nettoyé* les en-têtes (front-matter) des posts, notes et pages 
 2. *déposé* les photos et images dans le dossier `static\img` que je compte réorganiser par sous-dossiers thématiques
-2. <q>[Cool URIs don't change](https://www.w3.org/Provider/Style/URI)</q> *paramétré* les `[permalinks](https://gohugo.io/content-management/urls/)` dans le fichier `config.toml` pour conserver la structure des URLs jekyll (format ISO9601 AAAA/MM/JJ). 
+2. <q>[Cool URIs don't change](https://www.w3.org/Provider/Style/URI)</q> : *paramétré* les "[permalinks](https://gohugo.io/content-management/urls/)" dans le fichier `config.toml` pour conserver la structure des URLs jekyll (format ISO9601 AAAA/MM/JJ). 
 3. amorcé une localisation de date en français dans les deux templates `list` et `single`
 5. déployé le site sur [netlify](https://www.netlify.com/) à partir de mon nouveau repo github. Accessible sur <https://github.com/ChristopheDucamp/xtof-hugo-zen>
 	6. Archive et sécurité : l'ancien repo source jekyll est conservé [ici](https://github.com/ChristopheDucamp/xtof-clean-blog) sur github à titre d'archive.
 
 ## Yeah !
 
-Je m'arrête là pour aujourd'hui. Heureux retrouver la vitesse et la simplicité vécues lors de mes premiers pas sur Jekyll. Chantier de mise en forme et d'[indiemark](https://indieweb.org/IndieMark) prévu pour demain.
+Je m'arrête là pour ce soir. Heureux retrouver la vitesse et la simplicité vécues lors de mes premiers pas sur Jekyll. Chantier de mise en forme (menu page d'accueil, layouts à revoir) et d'[indiemark](https://indieweb.org/IndieMark) prévu cette semaine.
 
   
 

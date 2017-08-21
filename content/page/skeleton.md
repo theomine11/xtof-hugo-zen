@@ -14,10 +14,10 @@ Avant de partir en *pensée design css* pour construire une page d'accueil "[abo
 
 ## Typographie 
 
-La typo est définie avec le `rems`, de sorte que les tailles de police et les relations spatiales peuvent être évaluées en fonction d'une propriété `<html>` unique `font-size`. En sortie de boîte, Skeleton ne change jamais la taille de police `<html>`, mais il reste là dans le cas où vous en avez besoin pour votre projet. Toutes les mesures sont toujours de base 10, un `<h1>` avec une `font-size` de `5.0rem` signifie simplement `50px`.
+La typo est définie avec les `rems`, de sorte que les tailles de police et les relations spatiales peuvent être évaluées en fonction d'une propriété `<html>` unique `font-size`. En sortie de boîte, Skeleton ne change jamais la taille de police `<html>`, mais il reste là dans le cas où vous en avez besoin pour votre projet. Toutes les mesures sont toujours de base 10, un `<h1>` avec une `font-size` de `5.0rem` signifie simplement `50px`.
 
 - La **typographie de base** est [Raleway](http://www.google.com/fonts/specimen/Raleway) servie par Google, définie à 15rem (15px) sur une hauteur de 1.6 lignes (24px). D'autres types de base comme les [ancres](http://getskeleton.com/#), le **gras**, l'_emphase_ et le _souligné_ sont tous évidemment inclus.
-- **En-têtes** créez une famille de tailles distinctes chacune avec des `letter-spacing`, `line-height` et `margins` spécifiques.
+- **En-têtes** : créez une famille de tailles distinctes chacune avec des `letter-spacing`, `line-height` et `margins` spécifiques.
 
 <!-- Titres standards -->
 <h1>Titre</h1>
