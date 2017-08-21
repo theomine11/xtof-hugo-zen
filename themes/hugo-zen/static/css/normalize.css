@@ -1,9 +1,8 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
 /**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
+ * 1. Reglez la font-family par defaut sur sans-serif.
+ * 2. Empechez l ajustement de la taille de texte iOS apres changement d orientation, en desactivant le zoom utilisateur.
  */
 
 html {

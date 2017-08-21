@@ -23,11 +23,21 @@
                 </div>
 			</section>
 
-            <section class="webmention">
+            <section class="mention-edit">
+
                 <!-- partiel webmention -->
                 {{ partial "webmention.html" . }}
                 <!-- /partiel webmention -->
             </section>
+            <section class="edit">
+                <!-- partiel meta data-->
+                {{ partial "page-meta-data.html" . }}
+                <!-- /partiel meta data-->
+                <!-- partiel bouton page-edit-->
+                {{ partial "page-edit.html" . }}
+                <!-- /partiel bouton page-edit-->
+            </section>
+
 		</article>
 	</main>
 

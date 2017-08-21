@@ -5,11 +5,19 @@ author = "christophe ducamp"
 copyright = "xtof"
 googleanalytics = "UA-104942350-1"
 theme ="hugo-zen"
-
-
+metaDataFormat = "yaml"
 
 [permalinks]
   post = "/:year/:month/:day/:slug/"
+
+
+enableRobotsTXT = true
+enableGitInfo = true
+pygmentsUseClasses = true
+pygmentCodeFences = true
+#pygmentsStyle = "friendly"
+disqusShortname = "xtof"
+#googleAnalytics = "XXX"
 
 
 [params]
@@ -21,3 +29,8 @@ theme ="hugo-zen"
   github    = "https://github.com/ChristopheDucamp/"
   gitlab    = "https://gitlab.com/ChristopheDucamp/"
   email     = "christophe@ducamp.me"
+## repo Gh pour le pied de page (inclure un slash ? la fin)
+  ghrepo = "https://github.com/ChristopheDucamp/xtof-hugo-zen/"
+  favicon = "img/favicon.ico"
+  commit = "https://github.com/ChristopheDucamp/xtof-hugo-zen/tree"
+  rss = true

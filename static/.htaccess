@@ -1,0 +1,2 @@
+# Set HTTP headers for Charset
+AddDefaultCharset UTF-8
