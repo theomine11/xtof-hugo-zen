@@ -27,7 +27,7 @@ Je continuerai cependant à utiliser Jekyll. Je conserve une instance de famille
 
 ## Minimalisme "hugo-zen"
 
-Ce que j'aimerais vous raconter au fil de l'eau sera mon  expérience personnelle de non-développeur. Si vous êtes développeur web, vous aurez sûrement de meilleures astuces. Le point qui me fascine toujours dans Hugo -outre la vitesse hallucinante du "build"- c'est la visualisation live en local du rendu d'affichage durant les modifications de code. Oui, ne plus avoir à rafraîchir la page s'avère à l'usage très pratique pour l'apprentissage du code et les futures itérations de design css.
+Ce que que je vous raconterai au fil de l'eau sur ce site sera mon expérience personnelle de non-développeur. Si vous êtes développeur web, vous aurez sûrement de meilleures astuces. Le point qui me fascine toujours dans Hugo -outre la vitesse hallucinante du "build"- c'est la visualisation live en local du rendu d'affichage durant les modifications de code. Oui, ne plus avoir à rafraîchir la page s'avère à l'usage très pratique pour l'apprentissage du code et les futures itérations de design css.
 
 ![terminal : hugo serve](/img/migration-gohugo/hugo-zen-hugo-serve.png)
 
