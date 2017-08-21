@@ -52,7 +52,7 @@ comments: false
 
 ## Hébergement et déploiement
 
-- [Netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/) pour le CDN, le déploiement conte-inu, l'install https en un clic et l'interface d'admin.
+- [Netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/) pour le CDN, le déploiement en continu, l'install https en un clic et l'interface d'admin.
 
 ## Code tiers 
 
