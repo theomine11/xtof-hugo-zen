@@ -10,7 +10,13 @@
 <link rel="stylesheet" href="/css/skeleton.css">
 <link rel="stylesheet" href="/css/custom.css">
 <link rel="alternate" href="/index.xml" type="application/rss+xml" title="{{ .Site.Title }}">
-<title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
+<!--webmention.heroku.app -->
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+<!-- /webmention.heroku.app -->
+
+
+    <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
 </head>
 <body>
 

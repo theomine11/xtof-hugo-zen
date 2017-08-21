@@ -10,7 +10,8 @@
 		</div>
 		<div class="copyright">Copyright &copy; <!--{{ .Site.Copyright | safeHTML }}-->
             <span rel="author" class="p-author h-card">
-                    <a href="{{ .Site.Params.authorurl }}" >{{ .Site.Params.author }}</a>
+
+                    <a href="{{ .Site.Params.authorurl }}" ><img class="u-photo" src="{{ .Site.Params.logo }}" width="60" height="60" alt="{{ .Site.Title }}"> {{ .Site.Params.author }}</a>
             </span>
         </div>
 	</footer>

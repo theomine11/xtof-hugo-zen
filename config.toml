@@ -15,7 +15,7 @@ theme ="hugo-zen"
 [params]
   authorurl = "https://christopheducamp.com"
   author    = "xtof"
-  logo      = "/images/logo.jpg"
+  logo      = "/img/logo.jpg"
   twitter   = "https://twitter.com/xtof_party"
   facebook  = "https://www.facebook.com/christophe.ducamp"
   github    = "https://github.com/ChristopheDucamp/"
