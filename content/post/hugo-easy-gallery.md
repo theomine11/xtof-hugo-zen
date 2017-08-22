@@ -1,6 +1,6 @@
 ---
-title: "Shortcode Gallery"
-subtitle: "Pour insérer facilement des galeries de photos"
+title: "Galerie Photoswipe"
+subtitle: "pour insérer une galerie de photos"
 slug: ""
 date: "2017-08-22T10:44:34+02:00"
 draft: false
@@ -8,28 +8,87 @@ categories: []
 tags: [100daysofcode, photoswipe, photo, galerie]
 bigimg: [{src: "/img/path.jpg", desc: "Sur la Route"}]
 ---
-{{< figure src="/img/path.jpg" >}}
 
-Installé [Hugo Easy Gallery](https://www.liwen.id.au/heg/) pour faciliter la création de galeries de photos. Le shortcode `gallery` génère une galerie css responsive de toutes les images dans un dossier.<!--more-->
+{{< figure src="/img/path.jpg" >}}
+{{< load-photoswipe >}}
+
+Installé [Hugo Easy Gallery](https://www.liwen.id.au/heg/) pour la création de galeries de photos. Le shortcode `gallery` génère une galerie css responsive de toutes les images dans un dossier. Mais il me reste à hacker la css pour avoir un rendu acceptable. <!--more-->
 
 ## Créer une galerie à partir d'un dossier
 
-```go
-{{</* gallery dir="/img/auvers/" */>}} {{</* load-photoswipe */>}}
+Le truc pour créer une galerie d'images à partir d'un dossier :
+
+```
+{{</* gallery dir="/img/votre-dossier-images/" */>}}
+{{</* load-photoswipe */>}}
 ```
 
-donne 
+### Exemple sur ce site 
 
-{{< gallery dir="/img/auvers/" />}} {{< load-photoswipe >}}
+{{< gallery caption-effect="fade" >}}
+  {{< figure thumb="-thumb" link="/img/hexagon.jpg" >}}
+  {{< figure thumb="-thumb" link="/img/sphere.jpg" caption="Sphere" >}}
+  {{< figure thumb="-thumb" link="/img/triangle.jpg" caption="Triangle" alt="Ceci est long commentaire concernant un triangle" >}}
+{{< /gallery >}}
 
 ### Notes 
 
-  * Les images sont automatiquement légendées avec le nom du fichier.
-  * `[image].jpg` est utilisé pour l'image haute-résolution et `[image]-thumb.jpg` pour les vignettes.
-  * Si `[image]-thumb.jpg` n'existe pas, alors `[image].jpg` sera utilisé pour à la fois les images hi-res et vignettes.
-  * Le suffixe par défaut de la vignette est `-thumb`, mais vous pouvez en spécifier un différent, par ex. `thumb="-small"` or `thumb="_150x150"`.
-  * Le layout est responsive - essayez de changer la taille de fenêtre de votre navigateur ou utilisez le [device mode](https://developers.google.com/web/tools/chrome-devtools/device-mode/) Chrome pour voir la flexibilité responsiveness.
-  * `{{</* load-photoswipe */>}}` active PhotoSwipe. Vous n'avez besoin d'appeler ce shortcode qu'une fois par page. Si vous n'activez pas PhotoSwipe, vous aurez la même galerie d'images sur la page, mais si vous cliquez/tapez une image, elle liera directement à l'image hi-res (si vous en avez spécifié une) au lieu de charger le gadget PhotoSwipe carousel/lightbox. Pour savoir comment le PhotoSwipe fonctionne, voir ce [post précédent](https://www.liwen.id.au/photoswipe).
+- Les images sont automatiquement légendées avec le nom du fichier.
+- `[image].jpg` est utilisé pour l'image haute-résolution et `[image]-thumb.jpg` pour les vignettes.
+- Si `[image]-thumb.jpg` n'existe pas, alors `[image].jpg` sera utilisé tant pour les images en haute résolution que les vignettes.
+- Le suffixe par défaut de la vignette est `-thumb`, mais vous pouvez en spécifier un différent, par ex. `thumb="-small"` or `thumb="_150x150"`.
+- Le layout est "responsive" - essayez de changer la taille de fenêtre de votre navigateur ou utilisez le [simulateur de mobiles "device mode"](https://developers.google.com/web/tools/chrome-devtools/device-mode/) de Chrome pour voir la flexibilité.
+- `{{</* load-photoswipe */>}}` active PhotoSwipe. Vous n'avez besoin d'appeler ce shortcode qu'une fois par page. Si vous n'activez pas PhotoSwipe, vous aurez la même galerie d'images sur la page, mais si vous cliquez/tapez une image, elle liera directement à l'image hi-res (si vous en avez spécifié une) au lieu de charger le gadget PhotoSwipe carousel/lightbox. Pour savoir comment PhotoSwipe fonctionne, voir ce [post](https://www.liwen.id.au/photoswipe).
+
+
+Pour spécifier des fichiers images individuels
+
+```
+{{</* gallery */>}}
+  {{</* figure src="image1.jpg" */>}}
+  {{</* figure src="image2.jpg" */>}}
+  {{</* figure src="image3.jpg" */>}}
+{{</* /gallery */>}}
+```
+
+Paramètres optionnels :
+
+- `caption-position` - détermine la position de la légende sur l'image : 
+  - `bottom` (par défaut)
+  - `center`
+  - `none` cache les vignettes sur la page (ils ne s'affichent que dans PhotoSwipe)
+- `caption-effect` - détermine si/comment les vignettes apparaissent sur hover. Options :
+  - `slide` (par défaut)
+  - `fade`
+  - `none` (vignettes toujours visibles)
+- `hover-effect` - détermine comment les images changent sur hover. Options :
+  - `zoom` (par défaut)
+  - `grow`
+  - `shrink`
+  - `slideup`
+  - `slidedown`
+  - `none`
+- `hover-transition` - détermine comment les images changent sur hover. Options :
+  - not set - transition douce (par défaut)
+  - `none` - transition dure 
+
+
+## CSS Hackers
+
+`hugo-easy-gallery.css` est conçu pour fournir des carreaux carrés dans un conteneur avec `max-width: 768px`.
+
+Voici quelques pointeurs si vous voulez adaptez la CSS :
+
+ - Changez `.gallery {max-width: 768px;}` si vous voulez une galerie plus large que 768px.
+ - Changez `min-width` dans les styles `@media`  pour modifier les largeurs d'écran sur lesquelles le layout change
+ - Changez `min-width: 9999px` dans le dernier style  `@media` vers quelque chose de sensible si vous voulez utiliser un layout 4-carreaux
+ - Si vous voulez plus de 4 carreaux par ligne, réglez  `width`à 100% / nombre de carreaux par ligne
+ - `padding-bottom` = `width` donne les carreaux carrés. Changez le padding-bottom si vous voulez d'autres radio d'aspect, par ex. `width: 33.3%; padding-bottom: 25%` donne un ratio d'aspect 4:3.
+
+## Question 
+
+Testé avec le thème [beautifulhugo](https://github.com/halogenica/beautifulhugo), les choses ne fonctionnent pas proprement sur ce thème hugo-zen. J'essaierai de réparer plus tard.
+
 
 ## PhotoSwipe 
 
@@ -42,14 +101,6 @@ Cette solution offre :
   * Ne requiert pas de [pré-définir les tailles d'image](http://photoswipe.com/documentation/faq.html#image-size);
 
 **Tout le code est disponible sur [GitHub](https://github.com/liwenyip/hugo-pswp).**
-
-
-
-{{< gallery caption-effect="fade" >}}
-  {{< figure thumb="-thumb" link="/img/hexagon.jpg" >}}
-  {{< figure thumb="-thumb" link="/img/sphere.jpg" caption="Sphere" >}}
-  {{< figure thumb="-thumb" link="/img/triangle.jpg" caption="Triangle" alt="Ceci est long commentaire concernant un triangle" >}}
-{{< /gallery >}}
 
 
 ## Usage 
