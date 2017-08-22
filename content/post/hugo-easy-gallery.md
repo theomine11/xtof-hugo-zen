@@ -1,7 +1,7 @@
 ---
 aliases: [photoswipe]
 title: "Galerie Photoswipe"
-subtitle: "pour insérer une galerie de photos"
+subtitle: "Pour insérer une galerie de photos"
 slug: ""
 date: "2017-08-22T10:44:34+02:00"
 draft: false
@@ -13,7 +13,11 @@ bigimg: [{src: "/img/path.jpg", desc: "Sur la Route"}]
 {{< figure src="/img/path.jpg" >}}
 {{< load-photoswipe >}}
 
-Après un [essai de galerie photos plutôt convaincant sur le thème Beautiful Hugo](https://100daysofcode.christopheducamp.com/2017/07/27/%C3%A9chantillon-de-galerie-photoswipe/), j'ai installé [Hugo Easy Gallery](https://www.liwen.id.au/heg/). Le shortcode `gallery` génère une galerie css responsive de toutes les images dans un dossier. Mais il reste à hacker sérieusement la css pour avoir un rendu acceptable des affichages de vignette sur ce thème minimaliste. <!--more-->
+Installé [Hugo Easy Gallery](https://www.liwen.id.au/heg/) après un [premier essai convaincant de ce système de galeries photos sur le thème Beautiful Hugo](https://100daysofcode.christopheducamp.com/2017/07/27/%C3%A9chantillon-de-galerie-photoswipe/).
+
+Le shortcode `gallery` génère une galerie css responsive de toutes les images dans un dossier. 
+
+La css proposée en *sortie de boîte*  reste à bricoler sérieusement pour afficher les vignettes sur le thème hugo-zen.<!--more-->
 
 
 ## Créer une galerie à partir d'un dossier
@@ -25,7 +29,7 @@ Le truc pour créer une galerie d'images à partir d'un dossier :
 {{</* load-photoswipe */>}}
 ```
 
-### Exemple sur ce site 
+### Rendu sur Hugo-zen : css à revoir 
 
 {{< gallery caption-effect="fade" >}}
   {{< figure thumb="-thumb" link="/img/hexagon.jpg" >}}
