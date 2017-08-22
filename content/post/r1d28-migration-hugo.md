@@ -3,6 +3,7 @@ title: r1d28 Migration Jekyll vers Hugo
 date: 2017-08-20T08:21:00Z
 lastmod: 2017-08-21T01:00:00+02:00
 tags: [100daysofcode, gohugo, jekyll]
+description: changement de motorisation
 ---
 
 J'en rêvais depuis quelques mois. [Après quelques années vécues sur jekyll](/2013/12/03/premier-pas-sur-jekyll/), je migre aujourd'hui vers le framework [GoHugo](https://gohugo.io/) avec le thème minimaliste "hugo-zen" : 

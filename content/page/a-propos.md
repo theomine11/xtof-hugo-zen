@@ -3,6 +3,7 @@ title: Qui suis-je
 subtitle: Pourquoi devrait-on se rencontrer ?
 comments: false
 date: 2017-07-26
+hidefromhome: true
 ---
 
 Mon nom est Christophe Ducamp. Père de famille de 3 enfants, j'ai 38 ans (dans le système de numérotation hexadécimal), je vis à Paris et suis un newbie en code. 

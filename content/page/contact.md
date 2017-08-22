@@ -3,7 +3,7 @@ aliases:   ["contactez-moi"]
 title: Information de Contact
 description: "Information de contact, clé publique OpenPGP, liens sociaux et flux RSS du blog"
 subtitle: 
-date: 2017-07-22
+date: 2017-08-22
 lastmod: 2017-08-22
 hidefromhome: true
 draft: false

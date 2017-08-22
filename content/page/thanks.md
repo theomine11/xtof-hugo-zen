@@ -8,6 +8,7 @@ draft: false
 tags: [100daysofcode, gohugo, git]
 bigimg: [{src: "/img/path.jpg", desc: "Sur la Route"}]
 comments: false
+hidefromhome: true
 ---
 <!--more-->
 

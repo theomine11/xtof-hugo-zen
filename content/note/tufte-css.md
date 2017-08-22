@@ -4,6 +4,7 @@ subtitle: des outils pour mettre en forme les articles
 comments: false
 date: 2017-08-20
 lastmod: 2017-08-20
+hidefromhome: true
 ---
 
 *Une première ébauche de traduction pour étude d'un nouveau thème Hugo, extraite de la [source](https://edwardtufte.github.io/tufte-css/) originale, seul lien de référence.*

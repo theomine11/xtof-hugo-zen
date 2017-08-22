@@ -1,0 +1,41 @@
+{{ partial "header.html" . }}
+	<main role="main">
+{{ range (where .Data.Pages ".Params.hidefromhome" "!=" "true") }}
+        <article class="post-preview" itemscope itemtype="http://schema.org/Blog">
+            <h2 class="entry-title h-entry" itemprop="headline">
+                <a class="p-name u-url" href="{{ .RelPermalink }}">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</a>
+            </h2>
+            <div class="entry-meta">
+                <div class="home-entry-time">
+                    <time class="dt-published" itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2" }}{{ if in (slice 1) .Date.Day}}er{{ end }} {{ index $.Site.Data.mois (printf "%d" .Date.Month) }} {{ .Date.Year }}
+                    </time>
+                </div>
+                <div class="home-entry-tags">
+                    Posté dans : {{ range .Params.tags }}
+                    <a rel="tag" class="p-category" href="/tags/{{ replace . "#" "%23" | urlize }}/">{{ . }}</a>
+                    {{ end }}
+                </div>
+                <div class="home-entry-description" itemprop="description">
+                    <span class="home-entry-description-text">{{ .Summary }}</span>
+                    <a href="{{ .Permalink }}" class="post-read-more">[en savoir plus]</a>
+                </div>
+
+                <!--
+                {{ if eq .Type "post" }}
+                <div class="home-entry-categories">
+                    Posté dans : {{ range $index, $category := .Params.categories }}{{ if $index }} // {{ end }}<a href="/categories/{{ $category | urlize }}/">{{ $category }}</a>{{ end }}
+                </div>
+                {{ end }}
+                -->
+            </div>
+        </article>
+{{ end }}
+	</main>
+{{ partial "footer.html" . }}
+
+
+
+
+
+
+
