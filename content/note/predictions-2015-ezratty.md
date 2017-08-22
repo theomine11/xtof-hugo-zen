@@ -3,6 +3,7 @@ title: Tsunami numérique
 date: 2015-01-02 01:00:00 +01:00
 subtitle: Prédictions 2015 par Olivier Ezratty. La compile de notre monde de dingues
 hidefromhome: true
+draft: true
 ---
 
 À l'heure où je m'apprête à jeter mon téléphone dans l'océan pour [trouver le temps de lire](http://austinkleon.com/2014/12/29/how-to-read-more/), et de trouver un futur métier... je tombe sur la compile de prédictions 2015 contée par Oliver... Un must-read.

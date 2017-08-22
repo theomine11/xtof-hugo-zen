@@ -10,6 +10,9 @@ bigimg: [{src: "/img/path.jpg", desc: "Sur la Route"}]
 comments: false
 ---
 
+
+
+
 Avant de partir en *pensée design css* pour construire une page d'accueil "[above-the-fold](/2017/08/11/r1d19-above-the-fold/)" avec un menu personnalisé et d'autres layouts fondamentaux, je découvre avec enchantement les  potentiels de mise en forme du [Skeleton](http://getskeleton.com/#intro), le boilerplate intégré dans le thème [hugo-zen](https://github.com/rakuishi/hugo-zen).
 
 ## Typographie 

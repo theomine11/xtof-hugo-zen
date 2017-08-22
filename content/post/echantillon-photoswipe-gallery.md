@@ -2,8 +2,11 @@
 title: Échantillon de Galerie "Photoswipe"
 subtitle: Produire une Galerie
 date: 2017-07-27
+lastmod: 2017-08-22
 tags: ["exemple", "photoswipe"]
 ---
+
+<ins>edit du 22 août : page dépréciée avec le thème hugo-zen. shortcodes et js à réinstaller.</ins>
 
 Quelques shortcodes personnalisés créés par [Li-Wen Yip](https://www.liwen.id.au/heg/) et [Gert-Jan van den Berg](https://github.com/GjjvdBurg/HugoPhotoSwipe) pour produire des galeries avec [PhotoSwipe](http://photoswipe.com) . 
 
