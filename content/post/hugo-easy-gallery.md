@@ -1,6 +1,6 @@
 ---
-title: "Photoswipe"
-subtitle: "installation d'une galerie de photos"
+title: "Shortcode Gallery"
+subtitle: "Pour insérer facilement des galeries de photos"
 slug: ""
 date: "2017-08-22T10:44:34+02:00"
 draft: false
