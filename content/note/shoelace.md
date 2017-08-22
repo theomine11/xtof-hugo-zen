@@ -4,7 +4,7 @@ subtitle: Un reset.css à étudier
 comments: false
 date: 2017-08-03
 lastmod: 2017-08-03
-draft: true
+draft: false
 ---
 
 <dfn>[Shoelace.style](https://shoelace.style/)</dfn> est un kit de démarrage, pas un framework. Son auteur nous invite à le considérer comme une réinitialisation CSS saupoudrée de quelques composants utiles. Les utilisateurs de Bootstrap le trouveront familier, mais rafraîchissant.

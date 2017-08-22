@@ -1,0 +1,15 @@
+/* TEAM */
+  Owner and author: Christophe Ducamp
+  Contact:          https://christopheducamp.com/contact/
+  Twitter:          @xtof_party
+
+/* THANKS */
+  Software used:    https://github.com/ChristopheDucamp/xtof-hugo-zen/blob/master/content/page/thanks.md
+
+/* SITE */
+  Language:         French
+  Standards:        HTML5, CSS3
+  Made with:        Hugo - https://gohugo.io/
+  Source code:      https://github.com/ChristopheDucamp/xtof-hugo-zen/
+  Content license:  mostly CC BY 4.0 and BSD 3-Clause.
+                    See https://christopheducamp.com/mentions-legales/

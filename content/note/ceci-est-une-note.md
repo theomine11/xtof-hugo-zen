@@ -6,6 +6,7 @@ tags:
 - indieweb,
 - collection
 description: Ajouté un lien Notes dans le Menu... bricolages à venir
+draft: true
 ---
 
 Ajouté rapidement un onglet "Notes" dans le menu pour étudier l'usage des *collections* et *data* dans Jekyll.

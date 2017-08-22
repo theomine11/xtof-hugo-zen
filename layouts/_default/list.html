@@ -1,12 +1,21 @@
 {{ partial "header.html" . }}
 
 	<main role="main">
-		<h1 class="list-title">{{ .Title }}</h1>
+		<h1 class="list-title">{{ with .Data.Singular }}{{ humanize . }}: {{ end }}{{ .Title }}</h1>
 {{ range .Data.Pages }}
 		<article itemscope itemtype="http://schema.org/Blog">
 			<h2 class="entry-title h-entry" itemprop="headline"><a class="p-name u-url" href="{{ .RelPermalink }}">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</a></h2>
-			<span class="entry-meta"><time class="dt-published" itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2" }}{{ if in (slice 1) .Date.Day}}er{{ end }}
-               {{ index $.Site.Data.mois (printf "%d" .Date.Month) }} {{ .Date.Year }}</time></span>
+            <div class="entry-meta">
+                <div class="home-entry-time">
+                    <time class="dt-published" itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2" }}{{ if in (slice 1) .Date.Day}}er{{ end }} {{ index $.Site.Data.mois (printf "%d" .Date.Month) }} {{ .Date.Year }}</time>
+                </div>
+                {{ if eq .Type "post" }}
+                <div class="home-entry-categories">
+                    Posté dans : {{ range $index, $category := .Params.categories }}{{ if $index }} // {{ end }}<a href="/categories/{{ $category | urlize }}/">{{ $category }}</a>{{ end }}
+                </div>
+                {{ end }}
+                <div class="home-entry-description" itemprop="description"><span class="home-entry-description-text">{{ .Description }}</span></div>
+            </div>
 		</article>
 {{ end }}
 	</main>

@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/christopheducamp
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://christopheducamp.com
+  * I am christopheducamp (https://keybase.io/christopheducamp) on keybase.
+  * I have a public key with fingerprint B914 BE42 7074 8A2E 25DB  1CA2 3580 5CA3 B261 E045
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010172f93686bfa45236ca45d829b6963ac2faa8dfc47b4deade6f7552139013e05f0a",
+      "fingerprint": "b914be4270748a2e25db1ca235805ca3b261e045",
+      "host": "keybase.io",
+      "key_id": "35805ca3b261e045",
+      "kid": "010172f93686bfa45236ca45d829b6963ac2faa8dfc47b4deade6f7552139013e05f0a",
+      "uid": "f01b096007ad6626f4ebb25c4e924419",
+      "username": "christopheducamp"
+    },
+    "service": {
+      "hostname": "christopheducamp.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1503379512,
+  "expire_in": 157680000,
+  "prev": "518b106edb8edc5d28957d8724110b10c21e1b2892e9c395fed52327ffec6e55",
+  "seqno": 14,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.73
+Comment: https://keybase.io/crypto
+
+yMInAnicrZJbSBVBGMeP3VCjKKmol4qVbnKImdmdvRwouhFkF6weIhBOMzuz56xH
+z667e0yRLkQGQfZgF4oIHzKK7KLdo0NlVNANjEgrUqIsumNgKhHRrNRbvTUvH/N9
+/+83//n4bo0ZHsnPyWztWvtgRfmenPttxzOR9Ydu6LUSdViNFKuVUnwo8HLG/SCe
+spkUkwAEUEOWIau6Si2iYCSrpghMRwZVDVUmJrII0ZllKhpVGCeMq5aGMYKyAaDM
+AbYAkaKSZacT3HM9Ox0ILDWgQrmCNKApOkEcYUahSZCMdYBNIlOkQg4ULBqTjh92
+CHOU+Hyu7YicuMSH7P1F/599Z4ZwFoAUGCoAGmGqilRL4ZQibCrcQIoCjVDocy9N
+KrhQm0nP9gPHTXKWMUmFK22KSqJaZZs8HHD4o38o55pOhWC5nhM4plMuFMkgcP1Y
+SAhq3LBlI6fx37A4tdNMzFV0VHHPt520FINCaQZ2SIcYyLJmYIiiEq92bY/H7VCB
+NVUH4oTv8CqBxFCnEKicUZ0zEzOkG1hjuoYUCIGomAhySEUWccOUDWxxJuaJNMvi
+pspxOHWfV6YdwVaET5IQTN9OpEmQ8bi06eaN0hGRnPzIqJHDwoWL5OeN+7OG2ebc
+yMHX1w5ED07p3YF2JMZHTpWWlZeuRgt3FrV/rZ754Pb8i9lE67DOs6Snu6xz36vD
+FWVbbNAXrJ50TJv1/uj5lsutxZdyj9AzhaXXC99sW9809V5NX39efGP8LZnQX32i
+zxtYXvL408zGh/dq73ac/rJ76vSujyMmD7pH9i5r+j6FVD65nnr5tu7do3n1Pxu0
+xnfSuSLasqjk2cC6OXlr1TXxwVWphuzo/qebe78uvRqdsXXlnRJS1xNLNvamSpqv
+TOyo/1ywx91QsOrEi9ndN9fUfFss71+ya0EvO1nW1r6vIFH8/OHYAq+w80Kd3pad
+ZuX+2J6qTaCmfkaK+wrBh3R2ZPPoX8n2TW4=
+=pq4X
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/christopheducamp
+
+==================================================================

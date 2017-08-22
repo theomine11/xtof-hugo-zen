@@ -1,0 +1,21 @@
+{{/*
+    genere une carte du site pour les humains ou pages et posts apparaissent en ordre alphabetique.
+*/}}
+
+<h2>Pages</h2>
+<ul>
+{{ range (where .Site.Pages.ByTitle ".Type" "page") }}
+    <li><article itemscope itemtype="http://schema.org/Blog">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </article></li>
+{{ end }}
+</ul>
+
+<h2>Posts de Blog</h2>
+<ul>
+{{ range (where .Site.Pages.ByTitle ".Type" "post") }}
+    <li><article itemscope itemtype="http://schema.org/Blog">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </article></li>
+{{ end }}
+</ul>

@@ -11,15 +11,17 @@ Mise à jour à partir d'une ancienne version de Jekyll ? Quelques petites chose
 
 Avant de nous lancer, ouvrez votre fenêtre de terminal et récupérez la dernière version de Jekyll :
 
-{% highlight bash %}
+```bash
 $ gem update jekyll
-{% endhighlight %}
+```
 
+```html
 <div class="note feature">
   <h5 markdown="1">Plongeon</h5>
   <p markdown="1">Vous voulez un nouveau site Jekyll et démarrer rapidement ? Lancez simplement 
  <code>jekyll new NOMSITE</code> pour créer un nouveau répertoire avec un site Jekyll pré-installé.</p>
 </div>
+```html
 
 ### site.collections a été modifié 
 

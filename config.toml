@@ -56,3 +56,14 @@ disqusShortname = "xtof"
 
  [Author]
      twitter ="xtof_party"
+
+# MARKDOWN
+## Configuration pour le parseur mardown BlackFriday : https://github.com/russross/blackfriday
+[blackfriday]
+  plainIDAnchors = true
+  hrefTargetBlank = true
+  angledQuotes = true
+  smartypantsQuotesNBSP = true
+  latexDashes = true
+  
+  
