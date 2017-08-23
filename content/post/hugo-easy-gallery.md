@@ -10,9 +10,6 @@ tags: [100daysofcode, photoswipe, photo, galerie]
 bigimg: [{src: "/img/path.jpg", desc: "Sur la Route"}]
 ---
 
-{{< figure src="/img/path.jpg" >}}
-{{< load-photoswipe >}}
-
 Installé [Hugo Easy Gallery](https://www.liwen.id.au/heg/) après un [premier essai convaincant de ce système de galeries photos sur le thème Beautiful Hugo](https://100daysofcode.christopheducamp.com/2017/07/27/%C3%A9chantillon-de-galerie-photoswipe/).
 
 Le shortcode `gallery` génère une galerie css responsive de toutes les images dans un dossier. 

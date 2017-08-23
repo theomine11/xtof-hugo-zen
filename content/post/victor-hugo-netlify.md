@@ -4,15 +4,15 @@ title: "Victor-Hugo sur Netlify : Un Guide Étape par Étape"
 subtitle: ""
 slug: ""
 date: "2017-08-23T11:17:10+02:00"
-lastmod: "2017-08-23T12:18:10+02:00"
+lastmod: "2017-08-23T18:39:10+02:00"
 draft: false
 categories: [jamstack]
 tags: [100daysofcode, gohugo, boilerplate, netlify, déploiement, github]
 ---
 
-Jetons un oeil sur la façon d’héberger un site web statique utilisant [Hugo][1] sur Netlify, en n’oubliant pas d’installer un déploiement continu.
+Jetons un oeil sur la façon d’héberger un site web statique en utilisant [Hugo][1] sur Netlify, et en n’oubliant pas d’installer un déploiement continu.
 
-Dans ce tutoriel, nous utiliserons [Victor Hugo][2] (un modèle Hugo continuellement maintenu) pour construire notre site statique.
+Dans ce tutoriel, nous utiliserons [Victor Hugo][2] (un modèle GoHugo continuellement maintenu) pour construire notre site statique.
 
 Pour commencer, nous allons nous assurer que vous disposez de tous les outils dont vous aurez besoin. 
 Allez-y et téléchargez Victor Hugo [ici][2].
@@ -297,7 +297,7 @@ Là, c'est mieux. C'est beau, non ? N'était-ce pas si simple ? Avancez un peu p
 
 [1]: https://gohugo.io/
 [2]: https://github.com/netlify/victor-hugo
-[3]: https://www.netlify.com#netlifystart
+[3]: #netlifystart
 [4]: http://themes.gohugo.io/
 [5]: https://github.com/digitalcraftsman/hugo-strata-theme
 [6]: https://raw.githubusercontent.com/digitalcraftsman/hugo-strata-theme/dev/images/screenshot.png
