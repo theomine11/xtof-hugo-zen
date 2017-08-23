@@ -19,6 +19,8 @@ Le shortcode `gallery` génère une galerie css responsive de toutes les images 
 
 La css proposée en *sortie de boîte*  reste à bricoler sérieusement pour afficher les vignettes sur le thème hugo-zen.<!--more-->
 
+{{< figure src="/img/nature/chardon.jpg" alt="des chardons">}}
+
 
 ## Créer une galerie à partir d'un dossier
 
