@@ -12,11 +12,11 @@ bigimg: [{src: "/img/r1d13-200-divs.png", desc: "Display Challenge (Todd McLeod)
 
 Créez une page remplie de `div`s. Modifiez la propriété display des `div`s ([éléments de bloc](https://developer.mozilla.org/fr/docs/Web/HTML/Element/div) par défaut) pour un paramétrage qui permette aux `div`s d'être affichées l'une après l'autre horizontalement. 
 
-Votre page devrait ressembler à cela :
+Votre page devrait ressembler à ce qui suit... <!--more-->
 
 ![Display challenge - GoesToEleven](https://github.com/GoesToEleven/html-css-bootcamp/blob/master/030_display/02_hands-on-display/01_challenge/desired-result.png?raw=true)
 
-<!--more-->
+
 
 Fichiers : 030_display / [02_hands-on-display](https://github.com/GoesToEleven/html-css-bootcamp/tree/master/030_display/02_hands-on-display)
 
