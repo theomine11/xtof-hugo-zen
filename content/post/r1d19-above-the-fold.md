@@ -21,4 +21,4 @@ Mais où est le pli ? Pour les ordinateurs fabriqués au cours des dernières an
 
 ## Production en cours
 
-![layout min-width < 800](/img/above-the-fold-r1d19.png)
+![layout min-width < 800](/img/above-the-fold-r1d19.jpg)
