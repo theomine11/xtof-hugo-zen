@@ -11,7 +11,7 @@ tags: ["exemple", "photoswipe"]
 Quelques shortcodes personnalisés créés par [Li-Wen Yip](https://www.liwen.id.au/heg/) et [Gert-Jan van den Berg](https://github.com/GjjvdBurg/HugoPhotoSwipe) pour produire des galeries avec [PhotoSwipe](http://photoswipe.com) . 
 
 {{< gallery caption-effect="fade" >}}
-  {{< figure thumb="-thumb" link="/img/hexagon.jpg" >}}
+  {{< figure thumb="-thumb" link="/img/hexagon.jpg" caption="hexagone" >}}
   {{< figure thumb="-thumb" link="/img/sphere.jpg" caption="Sphere" >}}
   {{< figure thumb="-thumb" link="/img/triangle.jpg" caption="Triangle" alt="Ceci est long commentaire concernant un triangle" >}}
 {{< /gallery >}}
