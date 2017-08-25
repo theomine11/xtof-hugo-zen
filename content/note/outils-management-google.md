@@ -8,7 +8,7 @@ tags: [management, ressources]
 
 [source INC](https://www.inc.com/jessica-stillman/google-is-giving-away-its-best-tools-for-managers-.html)
 
-![google reWork](/img/google-rework.png)
+![google reWork](/img/google-rework.jpg)
 
 La recherche montre que les managers peuvent avoir un impact significatif sur les résultats commerciaux et l'expérience des employés. Google nous fait cadeau d'outils librement disponibles sur re:Work.
 
