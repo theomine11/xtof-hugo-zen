@@ -14,9 +14,7 @@ Installé [Hugo Easy Gallery](https://www.liwen.id.au/heg/) après un [premier e
 
 Le shortcode `gallery` génère une galerie css responsive de toutes les images dans un dossier. 
 
-La css proposée en *sortie de boîte*  reste à bricoler sérieusement pour afficher les vignettes sur le thème hugo-zen.<!--more-->
-
-{{< figure src="/img/nature/chardon.jpg" alt="des chardons">}}
+La css proposée en *sortie de boîte*  reste à bricoler afin d'afficher des vignettes carrées sur le thème hugo-zen.<!--more-->
 
 
 ## Créer une galerie à partir d'un dossier
