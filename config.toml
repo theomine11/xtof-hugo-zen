@@ -5,7 +5,6 @@ author = "christophe ducamp"
 DefaultContentLanguage = "fr"
 copyright = "Creative Commons Attribution 4.0 International License"
 googleanalytics = "UA-104942350-1"
-theme ="hugo-zen"
 metaDataFormat = "yaml"
 
 [permalinks]
