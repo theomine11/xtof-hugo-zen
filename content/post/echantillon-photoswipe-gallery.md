@@ -3,6 +3,7 @@ title: Échantillon de Galerie "Photoswipe"
 subtitle: Produire une Galerie
 date: 2017-07-27
 lastmod: 2017-08-22
+draft: true
 tags: ["exemple", "photoswipe"]
 ---
 
