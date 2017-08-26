@@ -56,6 +56,7 @@
             <a rel="me" class="contact-link TwitterLink" href="{{ .Site.Params.twitter }}">{{ .Site.Data.svglogos.twitter | safeHTML }}</a>
             <a rel="me" class="contact-link GithubLink" href="{{ .Site.Params.github }}">{{ .Site.Data.svglogos.github | safeHTML }}</a>
             <a rel="me" class="contact-link EmailLink" href="mailto:{{ .Site.Params.email }}">{{ .Site.Data.svglogos.email | safeHTML }}</a>
+            <a rel="me" class="contact-link KeybaseLink" href="{{ .Site.Params.keybase }}">{{ .Site.Data.svglogos.pgp | safeHTML }}</a>
             {{ if .Site.RSSLink }}<a class="contact-link RSSLink" type="application/rss+xml" href="{{ .Site.RSSLink }}">{{ .Site.Data.svglogos.rss | safeHTML }}</a>{{ end }}
         </div>
 
