@@ -23,6 +23,6 @@ Faites simplement un lien vers `shoelace.css` et ajoutez les personnalisations
         --color-primary: #09d;
       }
     </style>
-   ```html 
+   ```
 
 Shoelace é été créé par [@claviska](https://twitter.com/claviska) pour [Surreal CMS](https://www.surrealcms.com/). Il est disponible sous la licence MIT.
