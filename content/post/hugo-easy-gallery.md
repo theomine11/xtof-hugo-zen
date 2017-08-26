@@ -4,7 +4,7 @@ title: "Galerie Photoswipe"
 subtitle: "Pour insérer une galerie de photos"
 slug: ""
 date: "2017-08-22T10:44:34+02:00"
-draft: false
+draft: true
 categories: []
 tags: [100daysofcode, photoswipe, photo, galerie]
 bigimg: [{src: "/img/path.jpg", desc: "Sur la Route"}]
