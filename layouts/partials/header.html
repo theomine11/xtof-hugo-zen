@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 <head>
-
     <meta charset="utf-8">
     {{ .Hugo.Generator }}
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,13 +11,10 @@
     {{ if .Site.RSSLink -}}
     <link rel="alternate" href="{{ .Site.RSSLink }}" type="application/rss+xml" title="{{ .Site.Title }}"/>
     {{- end }}
-
     {{/* Schema.org markup for Google+ */}}
     <meta itemprop="name" content="{{ .Title }}">
     <meta itemprop="description" content="{{ .Description }}">
     <meta itemprop="image" content="/img/logo.jpg">
-
-
     {{/* Twitter Card data, image au moins 120x120px */}}
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="{{ .Site.Params.handle }}">
@@ -37,19 +33,11 @@
     <meta property="og:site_name" content="{{ .Site.Title }}" />
     <meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML }}" />
     <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" | safeHTML }}" />
-
     <!-- Real Favicon Generator -->
     {{ partial "favicons.html" . }}
     <!-- /Real Favicon Generator favicons -->
-
-
-    
     <link rel="alternate" href="/index.xml" type="application/rss+xml" title="{{ .Site.Title }}">
     <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
-    
-    
-
-
 </head>
 
 <body>
@@ -63,5 +51,12 @@
         {{ if eq $isHomePage true }}
         <h1 class="site-title">{{ .Site.Title }}</h1>
         {{ end }}
+
+        <div class="contact-links">
+            <a rel="me" class="contact-link TwitterLink" href="{{ .Site.Params.twitter }}">{{ .Site.Data.svglogos.twitter | safeHTML }}</a>
+            <a rel="me" class="contact-link GithubLink" href="{{ .Site.Params.github }}">{{ .Site.Data.svglogos.github | safeHTML }}</a>
+            <a rel="me" class="contact-link EmailLink" href="mailto:{{ .Site.Params.email }}">{{ .Site.Data.svglogos.email | safeHTML }}</a>
+            {{ if .Site.RSSLink }}<a class="contact-link RSSLink" type="application/rss+xml" href="{{ .Site.RSSLink }}">{{ .Site.Data.svglogos.rss | safeHTML }}</a>{{ end }}
+        </div>
 
     </header>
