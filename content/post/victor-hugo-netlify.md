@@ -84,7 +84,7 @@ Pour faire ainsi, entrez ce qui suit :
     $ hugo new post/premier.md
 ```    
 
-Le nouveau fichier est situé sur `content/post/premier.md`. Il vous appartien de l'épicer :
+Le nouveau fichier est situé sur `content/post/premier.md`. Il vous appartient de l'épicer :
 
 ```yaml
     ---
@@ -92,7 +92,7 @@ Le nouveau fichier est situé sur `content/post/premier.md`. Il vous appartien d
     date: 2017-08-23T11:25:34+02:00
     draft: true
     ---
-    «La paix de l'esprit produit des valeurs justes, les valeurs justes produisent des pensées droites. Les bonnes pensées produisent des actions justes et les actions justes produisent un travail qui sera une réflexion matérielle pour que les autres puissent voir la sérénité au centre de tout cela.
+    "La paix de l'esprit produit des valeurs justes, les valeurs justes produisent des pensées droites. Les bonnes pensées produisent des actions justes et les actions justes produisent un travail qui sera une réflexion matérielle pour que les autres puissent voir la sérénité au centre de tout cela."
     
     "Peace of mind produces right values, right values produce right thoughts. Right thoughts produce right actions and right actions produce work which will be a material reflection for others to see of the serenity at the center of it all."
     ― Robert M. Pirsig, Zen and the Art of Motorcycle Maintenance
@@ -191,7 +191,7 @@ Si tout vous semble bien, il est temps de pousser votre nouveau site hugo sur un
 
 ## **Créer votre Repo Git**
 
-[Créez un nouveau repo sur GitHub][7]. Pour éviter les erreurs, n'initialisez  pas le nouveau repo avec les fichiers README, license, ou gitignore. Vous pouvez ajouter ces fichiers une fois que votre projet aura été poussé vers GitHub.
+[Créez un nouveau repo sur GitHub][7]. Pour éviter les erreurs, n'initialisez pas le nouveau repo avec les fichiers README, license, ou gitignore. Vous pouvez ajouter ces fichiers une fois que votre projet aura été poussé vers GitHub.
 
 Ouvrez le terminal (ou votre outil de ligne de commande préféré) et assurez vous d'être que le répertoire de travail est réglé sur votre projet local. Si non, naviguez là comme suit : 
     
@@ -265,7 +265,7 @@ Il est désormais temps d'autoriser Netlify et GitHub à se parler. En cliquant 
 
 ![étape 4 - repo][12]
 
-Maintenant que vous avez connecté Netlify et GitHub, vous pouvez voir une liste de vos repos Git. Il y a le repo "hugo" que nous venons de pousser à GitHub. Sélectionnez-le.
+Maintenant que vous avez connecté Netlify et GitHub, vous pouvez voir une liste de vos repos Git. Il y a le repo "hugo" que nous venons de pousser vers GitHub. Sélectionnez-le.
 
 ### Étape 5: Configurer Vos Paramétrages
 
