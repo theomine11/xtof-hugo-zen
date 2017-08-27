@@ -43,17 +43,17 @@ Quelques tests de vitesse sur ma page d'accueil montraient une accélération in
 
 Migrer vers un générateur statique comme Hugo me fait réfléchir aux métriques, mais il y a encore quelques points à nettoyer ici et là.
 
-### Render-blocking JS and CSS in above-the-fold content
+### Éliminer les codes JavaScript et CSS qui bloquent l'affichage du contenu au-dessus de la ligne de flottaison
 
-Solution : move the `<link>` tag calling the CSS file from the head section of the HTML to the end of the `<body>`.
+Solution : déplacer la balise `<link>` appelant le fichier CSS de la section head du HTML vers la fin de la `<body>`.
 
-Consequence: it makes a CSS-less rendering of the website appear on screen a second before the CSS is loaded. This fixes the problem in the mobile section of Google’s PageSpeed Insights.
+Conséquence : cela produit un rendu du site web sans-CSS qui apparaît à l'écran une seconde avant que la CSS ne soit chargée. Ceci règle le problème de la section mobile des [outils de pagespeed Google](https://developers.google.com/speed/pagespeed/insights/).
 
-Note: the warning still pops up for the desktop analysis and on other metrics as_“render blocking CSS”_ because the website needs to load the external CSS file to be able to render the content’s style
+Remarque : l'avertissement continue à s'afficher pour l'analyse du desktop et sur d'autres métriques comme _“Éliminer les codes JavaScript et CSS qui bloquent l'affichage du contenu au-dessus de la ligne de flottaison_ parce que le site web a besoin de charger le fichier CSS externe pour pouvoir afficher le style du contenu.
 
-A solution to this may be inline the whole CSS in the HTML. For simplicity’s sake I decided to keep using the external CSS file even if it’s render blocking. It’s just one file of 12 kB once minified. It’s pretty small compared to the majority of the websites and can be further gzipped by the webserver. Also the incoming of HTTP/2’s server push may be just enough to ignore this issue.
+Une solution à cela peut être de mettre tout le CSS dans le HTML. Par souci de simplicité, j'ai décidé de continuer à utiliser le fichier CSS externe même s'il bloque le rendu. C'est juste un fichier de 12 kB une fois minifié. C'est assez petit par rapport à la majorité des sites Web et peut être gzipé par le serveur web. En outre, l'entrée du serveur HTTP/2 peut être suffisante pour ignorer ce problème.
 
-The same applies to Javascript files.
+La même chose s'applique aux fichiers Javascript.
 
 ### Unifer et minifier tous les fichiers Javascript et CSS
 
@@ -70,25 +70,28 @@ Once the server-side compression is enabled (see later), this CSS will be even s
 First of all, **check the compression level of the images** you are posting with your favorite image manipulation tools. Mine are GIMP and the ImageMagick command line tools. Set the compression levels of your PNG files to 9 (out of 9) and of your JPG files to something from 70 to 90 (out of 100). The level depends on the image content, so be sure to check it after the compression.
 
 After that, **create thumbnails of your images the exact width as your text column**. There is no need to insert a 2000x1000 image in your post when your column is 600 px wide, right? To achieve that, I use the ImageMagick command to create reduced versions of the images in a subfolder.
-    
+
+```bash
     # Create subfolder if does not exists.
     mkdir -p thumbnails
     
     # Create scaled versions of the images in this folder in the thumbnails 
     # subfolder. The reduced images bear the same name but are 600px wide.
     find . -maxdepth 1 \( -iname \*.png -o -iname \*.jpg \) -exec convert "{}" -scale 600x "thumbnails/{}" \;
-    
+```     
 
 When this is done, **use the `figure` shortcode** provided by Hugo to insert the images in a better way than pure Markdown. The images will be shown as thumbnails and will link to the full-sized version when clicked on. An example from one of my posts:
-    
+
+```go    
     {{< figure 
         src="/images/ring-distance/thumbnails/Circular_buffer.png" 
         link="/images/ring-distance/Circular_buffer.png"
     >}}
-    
+```    
 
 The `figure` shortcode is very powerful and can add titles, captions and more. Just an example here, but [check the documentation](https://gohugo.io/extras/shortcodes#figure) for the full list.
-    
+
+```go    
     {{< figure 
         src="/images/ring-distance/thumbnails/Circular_buffer.png" 
         link="/images/ring-distance/Circular_buffer.png"
@@ -98,7 +101,7 @@ The `figure` shortcode is very powerful and can add titles, captions and more.
         attr="Source: Wikipedia"
         attrlink="https://en.wikipedia.org/wiki/File:Circular_buffer.svg"
     >}}
-    
+```    
 
 ## Configurations .htaccess : cache, compression, keep-alive
 
@@ -109,6 +112,7 @@ For the full configuration I’m using on my website, check my [.htaccess file]
 ### Compression
 
 I tried the Gzip compression but found out that the Deflate method works better in my case. Just add the following lines to your `.htaccess` to enable compression of text(ish) files. Images don’t need to be compressed, since they already are, as well as Woff2 font files.
+
     
     ## Enable compression for common file types
     ## --------------------------------------------------------
@@ -151,6 +155,7 @@ I tried the Gzip compression but found out that the Deflate method works better 
 Many shared hosting web servers close the connection after each file has been downloaded, which obviously creates lots of overhead to reopening it and download the next file.
 
 Add this lines to the `.htaccess` file to let the connection be open even after the first transfer.
+
     
     ## Enable Keep-Alive connections
     ## --------------------------------------------------------
@@ -162,6 +167,7 @@ Add this lines to the `.htaccess` file to let the connection be open even afte
 ### Cache-Control header
 
 Finally the browser cache, a great tool to make your website fast. I use the`Cache-Control` header to add to each resource a time to live in the browser cache, so the browser does not even ask the server for validation. It just serves the user the cached content.
+
     
     ## Set browser cache time to live
     ## --------------------------------------------------------
@@ -199,6 +205,7 @@ The point is: do I need syntax highlighting on every page and post? Even on the 
 Obviously no, so what I did is add a simple line to the frontmatter of my content files: `highlight = true`. When this variable is `true`, then a line is added to the page footer requiring the highlighting library, otherwise the library is not loaded and we have a faster website, since its a resource less.
 
 The conditional loading is obtained with this simple lines in the footer partial file:
+
     
     {{ if eq .Params.highlight true }}
     <script src="/css/highlight.pack.js"></script>
