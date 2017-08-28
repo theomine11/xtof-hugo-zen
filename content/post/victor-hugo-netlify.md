@@ -142,8 +142,8 @@ La plupart des thèmes documentent dans leur fichier `README.md` la façon de le
 
 **4** - Pour inclure notre nouvelle page about dans cette navigation de thème, ouvrez le fichier `config.toml` que nous avons modifié précédemment et mettez à jour les variables du menu pour inclure la page about comme suit : 
 
-```    
-        [[menu.main]]
+```toml    
+    [[menu.main]]
         name = "Home"
         url  = "/"
         weight = 0
