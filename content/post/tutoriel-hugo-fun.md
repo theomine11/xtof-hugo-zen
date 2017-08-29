@@ -216,6 +216,7 @@ Son usage se fait comme suit :
 ```bash
     $ hugo-gallery <Chemin Source> <Section Destination> <Titre> [UrlBase]
 ```
+
 L'outil `hugo-gallery` créera un nouveau répertoire posts contenant un fichier markdown pour chaque image dans le répertoire source permettant un diaporama ordonné. Il lira tous les fichiers tirés du répertoire `Chemin Source`  et les sauvegardera dans le répertoire statique du site Hugo.
 
 Il créera un nouveau répertoire à l'intérieur du répertoire content basé sur le `Titre` fourni par ex. `content/welding`
@@ -231,7 +232,7 @@ Visitez `localhost:1313/welding` pour voir le contenu.
 
 Hugo dispose de plusieurs outils de déploiement tels que [hugomac][17] qui est une application de menus OSX permettant à l'utilisateur de publier facilement sur l'hébergement EC2. Aucune ligne de commande n'est nécessaire.
 
-De même [hugodeploy][18] fournit une configuration SFTP à déployer, ou vous pouvez simplement utiliser les [Déploiements automatisés][19] livrés avec Hugo.
+De même [hugodeploy][18] fournit une configuration SFTP à déployer, où vous pouvez simplement utiliser les [Déploiements automatisés][19] livrés avec Hugo.
 
 ## Conclusion
 

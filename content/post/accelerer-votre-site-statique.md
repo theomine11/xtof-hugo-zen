@@ -2,26 +2,27 @@
 title: "GoHugo : Accélerer Votre Site Statique"
 date: 2017-08-27T09:09:58+02:00
 draft: true
+lastmod: 2017-08-29
 ---
 
 Ce post est une adaptation de la série **[Hugo Power User](https://matjaz.it/tags/hugo-power-user/)**. L'idée est de faire que votre site web Hugo soit même encore plus rapide qu'un site statique par défaut. Vitesse, vitesse, vitesse !
 
 ## Préface : personnaliser un thème existant
 
-Comme je l'ai déjà écrit dans la [3ème partie de #HugoPowerUser](https://matjaz.it/hugo-power-user-make-it-web-friendly-1/), choisissez un thème existant et personnalisez-le pour qu'il corresponde à vos besoins. Une fois terminé, commencez à lire ce qui suit, parce que nous modifierons et tordrons aussi le thème.
+Comme je l'ai déjà écrit dans la [3ème partie de #HugoPowerUser](https://matjaz.it/hugo-power-user-make-it-web-friendly-1/), choisissez un thème existant et personnalisez-le pour qu'il corresponde à vos besoins. Une fois terminé, commencez à lire ce qui suit, parce que nous allons modifier et tordre aussi le thème.
 
 ## La Vitesse c'est Important 
 
-La vitesse du site Web est un facteur majeur d'importance pour votre site Web, et ce pour deux raisons principales :
+La vitesse d'affichage est un facteur majeur d'importance pour votre site Web, et ce pour deux raisons principales :
 
 - Les visiteurs : ils ne veulent pas attendre
-- Les moteurs de recherche : ils préfèrent les sites Web plus rapides car les utilisateurs préfèrent
+- Les moteurs de recherche : ils préfèrent les sites web plus rapides car les utilisateurs préfèrent
 
-La taille du site est étroitement corrélée à la vitesse du site web ; plus les pages Web et les ressources sont importantes (plus de MB à charger pour le voir), plus le site web est lent. Un site web plus petit est une chose étonnante pour les réseaux à vitesse lente que vos lecteurs peuvent avoir à leur domicile, car tout le monde n'a pas une connexion de 100 Mbps, ou sur un réseau cellulaire. Avez-vous testé votre site Web sur une connexion EDGE (a.k.a. 2.5G) ?
+La taille du site est étroitement corrélée à la vitesse du site web ; plus les pages web et les ressources sont importantes (plus de MB à charger pour le voir), plus le site web est lent. Un site web plus petit est une chose étonnante pour les réseaux à vitesse lente que vos lecteurs peuvent avoir à leur domicile, car tout le monde n'a pas une connexion de 100 Mbps, ou sur un réseau cellulaire. Avez-vous testé votre site Web sur une connexion EDGE (a.k.a. 2.5G) ?
 
 ## Suivez ces étapes pour accroître la vitesse
 
-Il existe de nombreux outils pour tester la vitesse de votre site web. Ceux que j'utilise sont : 
+Il existe plein d'outils pour tester la vitesse de votre site web. Ceux que j'utilise sont : 
 
   * [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
   * [Varvy](https://varvy.com/), which includes 3 (!) tools
@@ -57,30 +58,33 @@ La même chose s'applique aux fichiers Javascript.
 
 ### Unifer et minifier tous les fichiers Javascript et CSS
 
-As clearly stated on Varvy.com, **[combining](https://varvy.com/pagespeed/combine-external-css.html) and [minifying](https://varvy.com/pagespeed/minify-css.html) CSS and Javascript is really useful**.
+Comme le déclare clairement Varvy.com, **[combiner](https://varvy.com/pagespeed/combine-external-css.html) et [minifier](https://varvy.com/pagespeed/minify-css.html) les CSS & Javascript s'avère vraiment utile**.
 
-I unified the 3 CSS files from the [Hugo Zen](https://themes.gohugo.io/hugo-zen/) theme I used for this website, then added the CSS for the code highlighting from [Highlight.js](https://highlightjs.org/) and the CSS for the fonts I previously downloaded from Google Fonts using [Localfont](http://www.localfont.com/).
+J'ai unifié les 3 fichiers CSS provenant 
+1. du thème [Hugo Zen](https://themes.gohugo.io/hugo-zen/) que j'ai utilisé pour ce site web, 
+2. puis ajouté la CSS pour la mise en surbrillance du code provenant de [Highlight.js](https://highlightjs.org/) 
+3. et pour finir, ajouté la CSS pour les fontes que j'avais précédemment téléchargée à partir de Google Fonts en utilisant [Localfont](http://www.localfont.com/).
 
-This [unified CSS file](https://matjaz.it/css/style.css) has 28 kB. **Here comes the minifying!** I used [CSS Compressor](http://csscompressor.com/), a simple online tool to achieve the [minified version](https://matjaz.it/css/style.min.css) which has 14 kB; that’s 1⁄2 of the previous one!
+Ce [fichier CSS unifié](https://matjaz.it/css/style.css) fait 28 kB. **Voici comment minifier !** J'ai utilisé [CSS Compressor](http://csscompressor.com/), un simple outil en ligne pour parvenir à la [version minifiée](https://matjaz.it/css/style.min.css) qui fait 14 kB ; soit 1⁄2 de la précédente !
 
-Once the server-side compression is enabled (see later), this CSS will be even smaller: 3.5 kB and your website will be much faster! Awesome!
+Une fois la compression activée côté serveur (voir plus tard), cette CSS sera même encore plus petite : 3.5 kB et votre site web sera beaucoup plus rapide ! Merveilleux ! 
 
 ## Compresser les images et utiliser des vignettes 
 
-First of all, **check the compression level of the images** you are posting with your favorite image manipulation tools. Mine are GIMP and the ImageMagick command line tools. Set the compression levels of your PNG files to 9 (out of 9) and of your JPG files to something from 70 to 90 (out of 100). The level depends on the image content, so be sure to check it after the compression.
+Tout d'abord, **vérifiez le niveau de compression des images** que vous publiez avec vos outils de manipulation d'image préférés. J'utilise GIMP et les outils de ligne de commande ImageMagick. Réglez les niveaux de compression de vos fichiers PNG sur 9 (sur 9) et pour vos fichiers JPG quelque chose de 70 à 90 (sur 100). Le niveau dépend du contenu de l'image, alors assurez-vous de le vérifier après la compression.
 
-After that, **create thumbnails of your images the exact width as your text column**. There is no need to insert a 2000x1000 image in your post when your column is 600 px wide, right? To achieve that, I use the ImageMagick command to create reduced versions of the images in a subfolder.
+Ensuite, **créez des vignettes de vos images à la largeur exacte de votre colonne de texte**. Il n'est pas nécessaire d'insérer une image 2000x1000 dans votre publication lorsque votre colonne est de 600px de largeur, n'est-ce pas ? Pour ce faire, j'utilise la commande ImageMagick pour créer des versions réduites des images dans un sous-dossier.
 
 ```bash
-    # Create subfolder if does not exists.
+    # Cree le sous-dossier s'il n'existe pas.
     mkdir -p thumbnails
     
-    # Create scaled versions of the images in this folder in the thumbnails 
-    # subfolder. The reduced images bear the same name but are 600px wide.
+    # Créer des versions mises à l'échelle des images dans ce dossier dans le dossier thumbnails.
+    # Les images réduites portent le meme nom mais font 600px de large.
     find . -maxdepth 1 \( -iname \*.png -o -iname \*.jpg \) -exec convert "{}" -scale 600x "thumbnails/{}" \;
 ```     
 
-When this is done, **use the `figure` shortcode** provided by Hugo to insert the images in a better way than pure Markdown. The images will be shown as thumbnails and will link to the full-sized version when clicked on. An example from one of my posts:
+Une fois que c'est fait, **utilisez le shortcode `figure`** fourni par Hugo pour insérer les images d'une meilleure manière que le Markdown pur. Les images seront affichées en miniatures et seront liées à la version pleine-taille une fois qu'on clique dessus. Un exemple provenant d'un de mes posts : 
 
 ```go    
     {{< figure 
@@ -89,7 +93,7 @@ When this is done, **use the `figure` shortcode** provided by Hugo to insert
     >}}
 ```    
 
-The `figure` shortcode is very powerful and can add titles, captions and more. Just an example here, but [check the documentation](https://gohugo.io/extras/shortcodes#figure) for the full list.
+Le shortcode `figure` est très puissant et peut ajouter des titles, captions et plus encore. Juste un exemple ici, mais [regardez la documentation](https://gohugo.io/extras/shortcodes#figure) pour une liste complète.
 
 ```go    
     {{< figure 
@@ -105,13 +109,14 @@ The `figure` shortcode is very powerful and can add titles, captions and more.
 
 ## Configurations .htaccess : cache, compression, keep-alive
 
-OK, now begins the scary part bu also the most powerful one: web server configuration. As I told you before, I’m using Apache (on shared hosting), so I have to manipulate an `.htaccess` file in my website’s root directory to configure the server in a certain way. Please consider other configurations for your case and for your webserver, if needed.
+OK, commençons maintenant la partie effrayante mais aussi la plus puissante : la configuration du serveur web. Comme je vous l'ai déjà dit, j'utilise Apache (sur de l'hébergement mutualisé), donc je dois manipuler un fichier `.htaccess` dans le répertoire racine de mon site Web pour configurer le serveur d'une certaine manière. Si nécessaire, veuillez envisager d'autres configurations pour votre cas et pour votre serveur web.
 
-For the full configuration I’m using on my website, check my [.htaccess file](https://github.com/TheMatjaz/matjaz.it/blob/master/static/.htaccess).
+Pour la configuration complète que j'utilise pour mon site web, regardez mon [fichier .htaccess](https://github.com/TheMatjaz/matjaz.it/blob/master/static/.htaccess).
 
 ### Compression
 
-I tried the Gzip compression but found out that the Deflate method works better in my case. Just add the following lines to your `.htaccess` to enable compression of text(ish) files. Images don’t need to be compressed, since they already are, as well as Woff2 font files.
+J'ai essayé la compression Gzip mais j'ai découvert que la méthode Deflate fonctionne mieux dans mon cas. Ajoutez simplement les lignes suivantes à votre `.htaccess` pour permettre la compression des fichiers texte (ish). Les images n'ont pas besoin d'être compressées, car elles le sont déjà, ainsi que les fichiers de police Woff2.
+
 
     
     ## Enable compression for common file types
@@ -152,9 +157,9 @@ I tried the Gzip compression but found out that the Deflate method works better 
 
 ### Keep-Alive header
 
-Many shared hosting web servers close the connection after each file has been downloaded, which obviously creates lots of overhead to reopening it and download the next file.
+Beaucoup de serveurs Web hébergés partagés ferment la connexion après que chaque fichier ait été téléchargé, ce qui crée évidemment beaucoup de surcharge pour le rouvrir et télécharger le fichier suivant.
 
-Add this lines to the `.htaccess` file to let the connection be open even after the first transfer.
+Ajoutez ces lignes au fichier `.htaccess` pour laisser la connexion ouverte même après le premier transfert.
 
     
     ## Enable Keep-Alive connections
@@ -164,7 +169,7 @@ Add this lines to the `.htaccess` file to let the connection be open even afte
     </ifModule>
     
 
-### Cache-Control header
+### Header Cache-Control
 
 Finally the browser cache, a great tool to make your website fast. I use the`Cache-Control` header to add to each resource a time to live in the browser cache, so the browser does not even ask the server for validation. It just serves the user the cached content.
 
@@ -196,15 +201,15 @@ Finally the browser cache, a great tool to make your website fast. I use the`Cac
     </FilesMatch>
     
 
-## Load resources only when needed
+## Chargement des Ressources Uniquement si Besoin 
 
-This is a very broad suggestion but let me give you an example to explain: I’m using the Highlight.js library to add syntax highlighting to the code snippets on my website.
+Il s'agit d'une suggestion très large, mais permettez-moi de vous donner un exemple pour expliquer : j'utilise la bibliothèque `highlight.js` pour ajouter la mise en surbrillance de la syntaxe pour afficher les extraits de code.
 
-The point is: do I need syntax highlighting on every page and post? Even on the homepage?
+Le point est de savoir si j'ai besoin de la mise en surbrillance de syntaxe sur chaque page et sur chaque post ? Même sur la page d'accueil ?
 
-Obviously no, so what I did is add a simple line to the frontmatter of my content files: `highlight = true`. When this variable is `true`, then a line is added to the page footer requiring the highlighting library, otherwise the library is not loaded and we have a faster website, since its a resource less.
+Évidemment non. J'ai donc ajouté une simple ligne dans le front-matter de mes fichiers de contenu : `highlight = true`. Lorsque cette variable est `true`, une ligne est ajoutée au pied de page nécessitant l'appel de la bibliothèque de mise en surbrillance. Dans le cas inverse, la bibliothèque n'est pas chargée et nous disposons d'un site web plus rapide, car il s'agit d'une ressource en moins.
 
-The conditional loading is obtained with this simple lines in the footer partial file:
+Le chargement conditionnel est obtenu avec ces lignes simples dans le fichier partiel du pied de page:
 
     
     {{ if eq .Params.highlight true }}
@@ -213,9 +218,9 @@ The conditional loading is obtained with this simple lines in the footer partial
     {{ end }}
     
 
-## Final note: Wordpress vs optimized Hugo
+## Note Finale : Wordpress vs Hugo optimisé 
 
-Just a few rating results for this optimized version of my Hugo website compared to my previous version based on Wordpress
+Quelques résultats pour cette version optimisée de mon site web Hugo comparés à ma version précédente basée sur Wordpress
 
 #### Google PageSpeed Insights
 
@@ -233,7 +238,7 @@ Mobile UX
 99
 100
 
-#### Pingdom Tools
+#### Outils Pingdom
 
 The measurements were performed from the same location.
 
