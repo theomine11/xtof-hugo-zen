@@ -8,7 +8,7 @@ tags: [100daysofcode, framework, gohugo, css, utilitaires, framework, librairie]
 bigimg: [{src: "/img/tachyons-css.jpg", desc: "tachyons-css"}]
 ---
 
-36ème jour de mon défi `#100daysofcode` où je parviens à la fin de mon apprentissage des fondamentaux HTML/[CSS](https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade), bien accompagné par l'excellent [cours de Todd McLeod](https://www.greatercommons.com/learn/6708511014649856) où il nous a été clairement déconseillé de recourir aux frameworks CSS obèses comme "Bootcrap". 
+36ème jour de mon défi `#100daysofcode` où je parviens à la fin de mon apprentissage des fondamentaux HTML/[CSS](https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade), bien accompagné par l'excellent [cours de Todd McLeod](https://www.greatercommons.com/learn/6708511014649856). Un cours "pur CSS" et où les frameworks CSS obèses comme "Bootcrap" sont clairement bannis. 
 
 Durant les prochaines semaines, j'envisage de déroger à la règle et d'étudier [Tachyons](http://tachyons.io), un framework front-end CSS avec l'intention de décrypter et [hacker un joli thème GoHugo](http://gohugo.io/themes/customizing/). <!--more--> 
 
