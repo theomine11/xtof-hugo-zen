@@ -12,7 +12,7 @@ bigimg: [{src: "/img/tachyons-css.jpg", desc: "tachyons-css"}]
 
 Durant les prochaines semaines, j'envisage de déroger à la règle et d'étudier [Tachyons](http://tachyons.io), un framework front-end CSS avec l'intention de décrypter et [hacker un joli thème GoHugo](http://gohugo.io/themes/customizing/). <!--more--> 
 
-Exploré hier la bibliothèque d'utilitaires CSS <https://tachyons.io>. Si j'ai bien compris, on parle de [CSS Atomique](https://css-tricks.com/lets-define-exactly-atomic-css/), à savoir une approche d'architecture CSS qui favorise des petites classes nommées sur une fonction visuelle et avec un objectif unique.
+Exploré hier la bibliothèque d'utilitaires CSS <http://tachyons.io>. Si j'ai bien compris, on parle de [CSS Atomique](https://css-tricks.com/lets-define-exactly-atomic-css/), à savoir une approche d'architecture CSS qui favorise des petites classes nommées sur une fonction visuelle et avec un objectif unique.
 
 La bibliothèque Tachyons est utilisée raisonnablement par Bud Parr, designer front-end éclairé du thème de la [doc GoHugo](https://github.com/gohugoio/gohugoioTheme/tree/master/src) et celui de [Notre Dame de Paris - Ananké](https://github.com/budparr/gohugo-theme-ananke). Bud est un grand fan de Tachyons. Il  nous explique [ici](https://discourse.gohugo.io/t/something-like-shortcodes-in-layouts/7604/5) comment il utilise cette *CSS atomique statique* pour la conception de thèmes et l'optimisation de worklfows. Je dois vous avouer ne pas être encore au niveau pour suivre mais je reste motivé pour étudier en profondeur son approche de design. 
 
