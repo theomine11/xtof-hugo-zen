@@ -20,7 +20,7 @@ La bibliothèque Tachyons est utilisée raisonnablement par Bud Parr, designer f
 
 > Le <dfn>tachyon</dfn> est une *classe* de particules hypothétiques dont les principales caractéristiques sont d'avoir une vitesse toujours supérieure à la vitesse de la lumière dans le vide ( ), une masse imaginaire pure et une énergie qui diminue lorsque la vitesse augmente. -- [source wikipedia](https://fr.wikipedia.org/wiki/Tachyon)
 
-... Une fois de plus, je ne capter pas encore tout, mais on parle encore une fois de plus de vitesse.
+... Une fois de plus, je ne capte pas encore tout, mais on parle bien de vitesse ! Ce qui a du sens, vu la pauvreté de ma connexion edge me rapprochant de l'ère des modems à 14.4kbauds.
 
 ## J'envisage d'Utiliser Tachyons pour aller Vite
 
