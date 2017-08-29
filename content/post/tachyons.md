@@ -381,4 +381,4 @@ Pour information, le rendu d'affichage original est visible [ici](http://tachyon
     </a>
   </article>
 </section>
-````
+```
