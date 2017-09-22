@@ -10,7 +10,7 @@ bigimg: [{src: "/img/above-the-fold-r1d19.png", desc: "above the fold"}]
 
 Amorçage de construction d'une pleine page responsive "[above the fold](https://www.nngroup.com/articles/page-fold-manifesto/)".<!--more-->
 
-L'une des lignes directrices historiques du design web est de garder le contenu le plus important "au-dessus du pli". À l'origine utilisée pour designer la moitié supérieure d'une page de journal, le terme signifiait "la partie de la page visible sans défilement".
+L'une des lignes directrices historiques du design web est de garder le contenu le plus important "au-dessus du pli". À l'origine utilisé pour designer la moitié supérieure d'une page de journal, le terme signifiait "la partie de la page visible sans défilement".
 
 Mais où est le pli ? Pour les ordinateurs fabriqués au cours des dernières années, 1280 × 768 est la plus petite résolution commune. Une fenêtre de navigateur plein écran sur un tel ordinateur mesure environ 700 pixels de haut, selon les barres d'outils du navigateur, etc...
 
