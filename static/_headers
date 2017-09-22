@@ -3,4 +3,4 @@
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
   Referrer-Policy: no-referrer
-  Content-Security-Policy: default-src https:; img-src *; media-src *; child-src https://player.vimeo.com https://www.youtube.com
+  Content-Security-Policy: default-src 'none';script-src 'self' www.google-analytics.com;img-src www.google-analytics.com; img-src *; media-src *; child-src https://player.vimeo.com https://www.youtube.com
