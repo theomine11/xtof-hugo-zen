@@ -4,9 +4,9 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: origin-when-cross-origin
   x-frame-options: SAMEORIGIN
-  Content-Security-Policy: default-src 'self'; img-src *; media-src *; script-src 'self' 'unsafe-inline' https://platform.twitter.com; style-src 'self' 'unsafe-inline'; frame-src *; child-src *;
+  Content-Security-Policy: default-src 'self'; img-src *; media-src *; script-src 'self' 'unsafe-inline' platform.twitter.com 'unsafe-eval' syndication.twitter.com cdn.syndication.twimg.com cdn.jsdelivr.net assets.codepen.io production-assets.codepen.io speakerdeck.com www.google-analytics.com; style-src https://*.cloudfront.com; object-src 'self' vimeo.com; frame-src *; child-src *;
   Strict-Transport-Security: max-age=31536000; includeSubDomains
-    
+
 */
   Link: <{{ "dist/app.bundle.js" | relURL }}>; rel=preload; as=script
   Link: <{{ "dist/main.css" | relURL }}>; rel=preload; as=style
