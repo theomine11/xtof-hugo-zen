@@ -3,4 +3,4 @@
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
   Referrer-Policy: no-referrer
-  Content-Security-Policy: default-src https;style-src *;font-src *;script-src 'self' www.google-analytics.com;img-src * www.google-analytics.com; media-src *;
+  Content-Security-Policy: default-src https;style-src *;font-src *;script-src 'self' 'sha256-74JLr9cuITNpVepHWJhjtqZHyFkIu2S8XKP4o3Y+kNM=' www.google-analytics.com;img-src * www.google-analytics.com; media-src *;
