@@ -82,7 +82,7 @@ Unpacking objects: 100% (10/10), done.
 
 Vous avez désormais une copie locale de votre fork du repository Spoon-Knife !
 
-###  Étape 3 : Configurer Git pour synchroniser votre fork avec le dépôt original Spoon-Knife
+### Étape 3 : Configurer Git pour synchroniser votre fork avec le dépôt original Spoon-Knife
 
 Quand vous forkez un projet afin de proposer des modifications sur le repository original, vous pouvez configurer Git pour tirer les modifications à partir du dépôt original (encore appelé *upstream*) à l'intérieur du clone local de votre fork. 
 
@@ -236,18 +236,18 @@ Brancher vous permet de construire de nouvelles fonctionnalités ou de tester de
 
 Les branches sont vraiment faciles à travailler et vous épargneront beaucoup de maux de têtes, tout spécialement quand vous travaillez avec beaucoup de gens. Pour créer une branche et commencer à travailler dedans, lancez ces commandes : 
 
-```
-git branch *mabranche*
-# Crée une nouvelle branche nommée "mabranche"
-git checkout *mabranche*
-# Transforme "mabranche" en branche active
+```bash
+    git branch *mabranche*
+    # Crée une nouvelle branche nommée "mabranche"
+    git checkout *mabranche*
+    # Transforme "mabranche" en branche active
 ```
 
 Alternativement, vous pouvez utiliser le raccourci :
 
 ```bash
-git checkout -b *mabranche*
-# Crée une nouvelle branche nommée "mabranche" et la transforme en granche active
+    git checkout -b *mabranche*
+    # Crée une nouvelle branche nommée "mabranche" et la transforme en branche active
 ```
 
 Pour basculer entre les branches, utilisez `git checkout`.
