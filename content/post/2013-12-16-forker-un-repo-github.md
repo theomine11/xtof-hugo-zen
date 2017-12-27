@@ -71,14 +71,14 @@ Si ce n'est déjà fait, vous devez d'abord [installer et régler Git](/2013/12/
 ```git clone https://github.com/VOTRE-NOMUTILISATEUR/Spoon-Knife```
 6. Pressez la touche **Retour**. Votre clone local sera créé.
 
-{% highlight bash %}
+```bash
 git clone https://github.com/YOUR-USERNAME/Spoon-Knife
 Cloning into `Spoon-Knife`...
 remote: Counting objects: 10, done.
 remote: Compressing objects: 100% (8/8), done.
 remove: Total 10 (delta 1), reused 10 (delta 1)
 Unpacking objects: 100% (10/10), done.
-{% endhighlight %}
+```
 
 Vous avez désormais une copie locale de votre fork du repository Spoon-Knife !
 
@@ -245,10 +245,10 @@ git checkout *mabranche*
 
 Alternativement, vous pouvez utiliser le raccourci :
 
-{% highlight bash %}
+```bash
 git checkout -b *mabranche*
 # Crée une nouvelle branche nommée "mabranche" et la transforme en granche active
-{% endhighlight %}
+```
 
 Pour basculer entre les branches, utilisez `git checkout`.
 
