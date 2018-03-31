@@ -41,17 +41,11 @@
 
 
 
-
-
-
-
-
-
 /******************************************************************************
       SKELETON
 ******************************************************************************/
 
-/* Table of contents
+/* Table des matières
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 - Grid
 - Base Styles
@@ -69,7 +63,7 @@
 */
 
 
-/* Grid
+/* Grille
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
     position: relative;
@@ -156,7 +150,7 @@
 }
 
 
-/* Base Styles
+/* Styles de base
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
 html is set to 62.5% so that all the REM measurements throughout Skeleton
@@ -171,7 +165,7 @@ body {
     color: #222; }
 
 
-/* Typography
+/* Typographie
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
     margin-top: 4rem;
@@ -199,7 +193,7 @@ p {
     margin-top: 0; }
 
 
-/* Links
+/* Liens
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
     color: #1EAEDB; }
@@ -207,7 +201,7 @@ a:hover {
     color: #0FA0CE; }
 
 
-/* Buttons
+/* Boutons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button,
 button,
@@ -267,7 +261,7 @@ input[type="button"].button-primary:focus {
     border-color: #1EAEDB; }
 
 
-/* Forms
+/* Formulaires
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 input[type="email"],
 input[type="number"],
@@ -329,7 +323,7 @@ label > .label-body {
     font-weight: normal; }
 
 
-/* Lists
+/* Listes
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
     list-style: circle inside; }
@@ -404,7 +398,7 @@ form {
     margin-bottom: 2.5rem; }
 
 
-/* Utilities
+/* Utilitaires
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .u-full-width {
     width: 100%;
@@ -418,7 +412,7 @@ form {
     float: left; }
 
 
-/* Misc
+/* Divers
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
     margin-top: 3rem;

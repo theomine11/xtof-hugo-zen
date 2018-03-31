@@ -37,6 +37,7 @@
     {{ partial "favicons.html" . }}
     <!-- /Real Favicon Generator favicons -->
     <link rel="alternate" href="/index.xml" type="application/rss+xml" title="{{ .Site.Title }}">
+    <link href="https://micro.blog/xtof" rel="me" />
     <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
 </head>
 
