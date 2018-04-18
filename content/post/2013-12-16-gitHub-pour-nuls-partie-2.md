@@ -208,3 +208,5 @@ En plus de mon [anti-sèche pour la ligne de commande](/2013/12/09/anti-seche-li
 * **[GitHub Guides](http://www.youtube.com/GitHubGuides)**. Si vous êtes plutôt visuel, le canal officiel de GitHub vaut le coup d'oeil. J'ai particulièrement beaucoup **appris de la série [Git Basics](http://www.youtube.com/watch?v=8oRjP8yj2Wo&list=PLg7s6cbtAD165JTRsXh8ofwRw0PqUnkVH)** en quatre parties.
 * **[Git Reference](http://gitref.org/)**. Vous avez les basiques mais vous oubliez toujours les commandes ? Ce site pratique est génial comme glossaire de référence.
 * **[Git - le petit guide](http://rogerdudler.github.io/git-guide/index.fr.html)**. Ce tutoriel est court et délicieux, mais il allait un peu trop vite pour moi. Si vous voulez vous rafraîchir sur les fondamentaux de Git, ceci devrait faire tout ce dont vous avez besoin.
+
+Vous pouvez aussi contribuer à d'autres projet, comme le développement d'un jeu vidéo en cliquant ICI : https://github.com/theomine11/RP-SandBox-Realistic . N'hésitez pas à partager ce projet GitHub.
